@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_main"
+    android:background="#DCE6E4"
+    android:orientation="vertical"
+    tools:context="com.android.wbs.agoraaudio.com.agora.wbs.agoraaudio.MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_setting"
+        android:src="@drawable/btn_setting_android_2x"
+        android:layout_gravity="end"
+        android:layout_width="@dimen/iv_setting_size"
+        android:layout_height="@dimen/iv_setting_size"
+        android:layout_margin="@dimen/et_margin"/>
+
+    <EditText
+        android:id="@+id/et_channel_name"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/et_hint"
+        android:layout_margin="@dimen/et_margin" />
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:text="@string/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/rg_audio_items"
+        android:layout_margin="@dimen/rg_margin_top"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_a2a"
+            android:text="@string/rb_a2a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_a2s"
+            android:text="@string/rb_a2s"
+            android:layout_marginTop="@dimen/rg_margin_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_s2a"
+            android:text="@string/rb_s2a"
+            android:layout_marginTop="@dimen/rg_margin_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_s2s"
+            android:text="@string/rb_s2s"
+            android:layout_marginTop="@dimen/rg_margin_top"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    
+    <ImageView
+        android:id="@+id/iv_join"
+        android:layout_gravity="center_horizontal|bottom"
+        android:onClick="joinChannel"
+        android:background="@drawable/iv_join_click"
+        android:layout_width="84dp"
+        android:layout_height="32dp" />
+
+</LinearLayout>

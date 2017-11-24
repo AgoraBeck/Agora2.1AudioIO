@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCE6E4"
+    tools:context="com.android.wbs.agoraaudio.com.agora.wbs.agoraaudio.ChatRoomActivity">
+
+    <TextView
+        android:id="@+id/tv_channel_room"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/et_margin"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/sv_display"
+        android:layout_below="@id/tv_channel_room"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_info_display"
+            android:layout_margin="@dimen/et_margin"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_margin="@dimen/et_margin"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/iv_chat_room_size">
+
+        <ImageView
+            android:id="@+id/iv_mute"
+            android:src="@drawable/btn_mute"
+            android:layout_weight="1"
+            android:onClick="onMuteClick"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/iv_chat_room_size" />
+
+
+        <ImageView
+            android:id="@+id/iv_hung_up"
+            android:src="@drawable/btn_hungup"
+            android:layout_weight="1"
+            android:onClick="onHungUpClick"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/iv_chat_room_size" />
+
+
+        <ImageView
+            android:id="@+id/iv_speaker"
+            android:src="@drawable/btn_earphone"
+            android:onClick="onEarPhone"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/iv_chat_room_size" />
+    </LinearLayout>
+</RelativeLayout>

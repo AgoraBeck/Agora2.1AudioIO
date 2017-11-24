@@ -1,0 +1,9 @@
+build/android-profile/
+app/.externalNativeBuild
+build/generated/
+app/src/main/libs
+build/intermediates
+.gradle/3.3/taskArtifacts
+app/src/main/libs/
+build/
+.gradle/3.3/tasks/
