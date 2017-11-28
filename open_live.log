@@ -1,0 +1,1752 @@
+Local Date: Tue Nov 28 14:43:58 2017
+Build info: Nov 28 2017 01:10:46 r
+
+ERROR   (14:43:58: 41 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58: 41 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58: 41 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58: 62 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58: 62 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+INFO    (14:43:58: 72 |   10)  11476; [rs] **report stats: seq: 28, report list size 11, tx/rx: 6070/1344, cache size: 0, report success rate: 100
+ERROR   (14:43:58: 83 |   11)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58: 84 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:105 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:105 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:105 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+DEBUG   (14:43:58:117 |   12)  11476; Paced sender video rexfer target bitrate 0.
+
+ERROR   (14:43:58:127 |   10)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:127 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:148 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:148 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:169 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:169 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:169 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+DEBUG   (14:43:58:176 |    7)  11476; [ch0] ping1 (cid:1343759702, uid:1542778275, sync:1): 101.69.223.3:4007
+DEBUG   (14:43:58:176 |    0)  11476; [ch1343759702] usersStreamInfoReq (cid:1542778275, uid:3011138883)
+DEBUG   (14:43:58:208 |   32)  11476; [ch0] pong1 (cid:1343759702, uid:1542778275, sync:1): 101.69.223.3:4007
+DEBUG   (14:43:58:208 |    0)  11476; [ch0] ping2 (cid:1343759702, uid:1542778275): 101.69.223.3:4007
+DEBUG   (14:43:58:208 |    0)  11476; calc audio vos qos: -------
+DEBUG   (14:43:58:208 |    0)  11476; [ch0] to client: unknown 0/0, to vos: unknown 59/59
+DEBUG   (14:43:58:208 |    0)  11476; OnPong and lost tx: 0 rx:2057282456
+DEBUG   (14:43:58:208 |    0)  11476; calc video vos qos: -------
+DEBUG   (14:43:58:208 |    0)  11476; [ch0] to client: unknown 0/0, to vos: unknown 0/0
+DEBUG   (14:43:58:208 |    0)  11476; OnPong and lost tx: 0 rx:2057282456
+DEBUG   (14:43:58:208 |    0)  11476; calc a+v vos qos: -------
+DEBUG   (14:43:58:208 |    0)  11476; [ch0] to client: unknown 0/0, to vos: unknown 59/59
+DEBUG   (14:43:58:208 |    0)  11476; OnPong and lost tx: 0 rx:2057282456
+DEBUG   (14:43:58:208 |    0)  11476; updateUsersStreamInfo, {uid:1542778275,type:0}
+ERROR   (14:43:58:211 |    3)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:212 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:233 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:233 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:254 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:254 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:254 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:275 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:276 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:297 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:297 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:318 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:318 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:318 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:339 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:340 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:361 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:361 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:382 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:382 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:382 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:404 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:404 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:425 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:425 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:467 |   42)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:467 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:468 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:489 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:489 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:510 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:510 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:531 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:532 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:532 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:553 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:553 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:574 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:574 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:595 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:596 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:617 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:617 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:617 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:638 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:638 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:660 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:660 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:681 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:681 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:681 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:723 |   42)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:723 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:745 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:745 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:767 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:767 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:767 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:787 |   20)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:788 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:809 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:809 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:830 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:830 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:830 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:851 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:852 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:873 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:873 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:894 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:894 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:894 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:916 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:916 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:937 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:937 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:979 |   42)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:979 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:58:980 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:  1 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:  1 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59: 22 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59: 22 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59: 43 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59: 44 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59: 44 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59: 65 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59: 65 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+DEBUG   (14:43:59: 72 |    7)  11476; [tactics] auido local uid(send) 1542778275 seq 67 codec:82 rPkCount 0 sPkCount 0 netType 2 poorDevice 0           PkLst 0 frameLst 0 rtt 0 jitter 0 FEC 1:0 maxLst 0 uQos 0 dQos 0 pk_length:70 cpu:963
+DEBUG   (14:43:59: 72 |    0)  11476; [tactics] video local uid(send):1542778275 seq:67 uQos:0 dQos:0 sendPk:0 rtt:0 lost:0 bwe:0 kbps:0/0 fps:0/0           qp:0 decoded:0 failed:0 render:0 resolution:0X0 diff(a/v):232202724/232202724
+DEBUG   (14:43:59: 74 |    2)  11476; [ep] audio encoder/decoder 0/0 ms/50 frames
+DEBUG   (14:43:59: 75 |    1)  11476; [ep] sdk audio tx/rx time 0/0 video tx/rx time 0/0 ms/50 frames, total 0 ms
+DEBUG   (14:43:59: 75 |    0)  11476; [ep] pickup i/o 0/1 timer 0
+DEBUG   (14:43:59: 75 |    0)  11476; [ep] A/recoding bad A/playout excellent S/CPU unknown S/throughput excellent
+DEBUG   (14:43:59: 75 |    0)  11476; start duration: 135 s, calc duration: 2000 ms, byte rate (kbps): tx=3, rx=0, total=3
+ERROR   (14:43:59: 87 |   12)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59: 87 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:107 |   20)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:108 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:108 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:129 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:129 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+DEBUG   (14:43:59:137 |    8)  11476; Paced sender video rexfer target bitrate 0.
+
+ERROR   (14:43:59:150 |   13)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:150 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:171 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:172 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:172 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:193 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:193 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:214 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:214 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:257 |   43)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:257 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:278 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:278 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:278 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:299 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:299 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:321 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:321 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:342 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:342 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:342 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:363 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:364 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+DEBUG   (14:43:59:376 |   12)  11476; [ch0] ping1 (cid:1343759702, uid:1542778275, sync:1): 101.69.223.3:4007
+DEBUG   (14:43:59:376 |    0)  11476; [ch1343759702] usersStreamInfoReq (cid:1542778275, uid:4211173652)
+ERROR   (14:43:59:385 |    9)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:385 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+DEBUG   (14:43:59:394 |    9)  11476; [ch0] pong1 (cid:1343759702, uid:1542778275, sync:1): 101.69.223.3:4007
+DEBUG   (14:43:59:394 |    0)  11476; [ch0] ping2 (cid:1343759702, uid:1542778275): 101.69.223.3:4007
+DEBUG   (14:43:59:394 |    0)  11476; calc audio vos qos: -------
+DEBUG   (14:43:59:394 |    0)  11476; [ch0] to client: unknown 0/0, to vos: unknown 59/59
+DEBUG   (14:43:59:394 |    0)  11476; OnPong and lost tx: 0 rx:2057282456
+DEBUG   (14:43:59:394 |    0)  11476; calc video vos qos: -------
+DEBUG   (14:43:59:394 |    0)  11476; [ch0] to client: unknown 0/0, to vos: unknown 0/0
+DEBUG   (14:43:59:394 |    0)  11476; OnPong and lost tx: 0 rx:2057282456
+DEBUG   (14:43:59:394 |    0)  11476; calc a+v vos qos: -------
+DEBUG   (14:43:59:394 |    0)  11476; [ch0] to client: unknown 0/0, to vos: unknown 59/59
+DEBUG   (14:43:59:394 |    0)  11476; OnPong and lost tx: 0 rx:2057282456
+DEBUG   (14:43:59:395 |    1)  11476; updateUsersStreamInfo, {uid:1542778275,type:0}
+ERROR   (14:43:59:407 |   12)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:407 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:407 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:428 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:428 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:449 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:449 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:470 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:470 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:471 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:513 |   42)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:513 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:534 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:534 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:555 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:555 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:556 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:577 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:577 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:598 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:598 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:619 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:620 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:620 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:641 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:641 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:662 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:662 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:683 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:684 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:684 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:705 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:705 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:727 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:728 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:769 |   41)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:769 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:769 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:790 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:790 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:811 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:811 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:833 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:833 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:833 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:854 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:854 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:875 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:876 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:897 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:897 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:897 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:918 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:918 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:939 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:940 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:961 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:961 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:982 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:982 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:43:59:983 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:  5 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:  5 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0: 47 |   42)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0: 47 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0: 67 |   20)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0: 67 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0: 67 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0: 89 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0: 89 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:110 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:110 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:131 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:131 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:132 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:153 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:153 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+DEBUG   (14:44: 0:157 |    4)  11476; Paced sender video rexfer target bitrate 0.
+
+ERROR   (14:44: 0:174 |   17)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:174 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:195 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:196 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:196 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:217 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:217 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:239 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:239 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:259 |   20)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:260 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:260 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:302 |   42)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:302 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:323 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:323 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:345 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:345 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:345 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:367 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:367 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:387 |   20)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:388 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:409 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:409 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:409 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:430 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:430 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:451 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:452 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:473 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:473 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:473 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:495 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:495 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:516 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:516 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:558 |   42)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:558 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:558 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+DEBUG   (14:44: 0:576 |   18)  11476; [ch0] ping1 (cid:1343759702, uid:1542778275, sync:1): 101.69.223.3:4007
+DEBUG   (14:44: 0:577 |    1)  11476; [ch1343759702] usersStreamInfoReq (cid:1542778275, uid:1116468587)
+ERROR   (14:44: 0:579 |    2)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:579 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:601 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:601 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+DEBUG   (14:44: 0:607 |    6)  11476; [ch0] pong1 (cid:1343759702, uid:1542778275, sync:1): 101.69.223.3:4007
+DEBUG   (14:44: 0:607 |    0)  11476; [ch0] ping2 (cid:1343759702, uid:1542778275): 101.69.223.3:4007
+DEBUG   (14:44: 0:607 |    0)  11476; calc audio vos qos: -------
+DEBUG   (14:44: 0:607 |    0)  11476; [ch0] to client: unknown 0/0, to vos: unknown 59/59
+DEBUG   (14:44: 0:607 |    0)  11476; OnPong and lost tx: 0 rx:2057282456
+DEBUG   (14:44: 0:607 |    0)  11476; calc video vos qos: -------
+DEBUG   (14:44: 0:607 |    0)  11476; [ch0] to client: unknown 0/0, to vos: unknown 0/0
+DEBUG   (14:44: 0:607 |    0)  11476; OnPong and lost tx: 0 rx:2057282456
+DEBUG   (14:44: 0:607 |    0)  11476; calc a+v vos qos: -------
+DEBUG   (14:44: 0:607 |    0)  11476; [ch0] to client: unknown 0/0, to vos: unknown 59/59
+DEBUG   (14:44: 0:607 |    0)  11476; OnPong and lost tx: 0 rx:2057282456
+DEBUG   (14:44: 0:608 |    1)  11476; updateUsersStreamInfo, {uid:1542778275,type:0}
+ERROR   (14:44: 0:622 |   14)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:622 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:643 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:644 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:644 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:665 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:665 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:687 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:687 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:707 |   20)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:708 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:708 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:729 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:729 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:750 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:750 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:772 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:772 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:772 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:793 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:793 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:835 |   42)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:835 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:857 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:857 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:857 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:878 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:878 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:899 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:900 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:921 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:921 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:921 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:942 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:942 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:963 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:964 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:985 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:985 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 0:985 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:  7 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:  7 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1: 28 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1: 28 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1: 49 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1: 49 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1: 49 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+DEBUG   (14:44: 1: 74 |   25)  11476; [ep] audio encoder/decoder 0/0 ms/50 frames
+DEBUG   (14:44: 1: 75 |    1)  11476; [ep] sdk audio tx/rx time 0/0 video tx/rx time 0/0 ms/50 frames, total 0 ms
+DEBUG   (14:44: 1: 75 |    0)  11476; [ep] pickup i/o 0/0 timer 0
+DEBUG   (14:44: 1: 75 |    0)  11476; [ep] A/recoding bad A/playout excellent S/CPU unknown S/throughput excellent
+DEBUG   (14:44: 1: 75 |    0)  11476; start duration: 137 s, calc duration: 2000 ms, byte rate (kbps): tx=1, rx=1, total=2
+DEBUG   (14:44: 1: 75 |    0)  11476; [tactics] auido local uid(send) 1542778275 seq 68 codec:82 rPkCount 0 sPkCount 0 netType 2 poorDevice 0           PkLst 0 frameLst 0 rtt 0 jitter 0 FEC 1:0 maxLst 0 uQos 0 dQos 0 pk_length:70 cpu:1709
+DEBUG   (14:44: 1: 75 |    0)  11476; [tactics] video local uid(send):1542778275 seq:68 uQos:0 dQos:0 sendPk:0 rtt:0 lost:0 bwe:0 kbps:0/0 fps:0/0           qp:0 decoded:0 failed:0 render:0 resolution:0X0 diff(a/v):232204726/232204726
+ERROR   (14:44: 1: 91 |   16)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1: 91 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:113 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:113 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:134 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:134 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:134 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:155 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:156 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:177 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+DEBUG   (14:44: 1:177 |    0)  11476; Paced sender video rexfer target bitrate 0.
+
+ERROR   (14:44: 1:177 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:198 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:198 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:198 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:219 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:220 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:241 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:241 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:262 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:262 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:262 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:284 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:284 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:305 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:305 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:347 |   42)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:347 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:369 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:369 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:369 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:390 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:390 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:411 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:412 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:433 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:433 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:433 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:454 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:454 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:475 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:476 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:497 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:497 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:497 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:519 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:519 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:539 |   20)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:540 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:561 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:561 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:561 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:582 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:582 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:625 |   43)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:625 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:647 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:647 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:647 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:667 |   20)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:667 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:689 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:689 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:710 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:710 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:710 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:732 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:732 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:753 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:753 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+DEBUG   (14:44: 1:756 |    3)  11402; [AudioRoute] cancel bluetooth timer
+INFO    (14:44: 1:757 |    1)  11402; [AudioRoute] Monitor stopped
+INFO    (14:44: 1:757 |    0)  11402; API call to leave channel
+INFO    (14:44: 1:757 |    0)  11476; [cm] emit leave channel signal
+INFO    (14:44: 1:760 |    3)  11402; Detach external video source from pipeline
+DEBUG   (14:44: 1:760 |    0)  11402; [AudioRoute] uninitialize
+INFO    (14:44: 1:762 |    2)  11402; android destroy
+ERROR   (14:44: 1:774 |   12)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:774 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:774 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:796 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:797 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:817 |   20)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:817 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:838 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:838 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:838 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:880 |   42)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:881 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:902 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:902 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:923 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:923 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:923 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:945 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:945 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:967 |   22)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:967 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:987 |   20)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 1:987 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 2:  9 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 2:  9 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 2:  9 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 2: 30 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 2: 30 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 2: 51 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 2: 52 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 2: 73 |   21)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 2: 74 |    1)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44: 2: 74 |    0)  11477; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+INFO    (14:44: 2: 78 |    4)  11476; [che] stopCall begins
+APICALL (14:44: 2: 78 |    0)  11476; StopDebugRecording()
+APICALL (14:44: 2: 78 |    0)  11476; StopSend
+INFO    (14:44: 2:166 |   88)  11476; StopRecording complete
+APICALL (14:44: 2:166 |   88)  11476; StopListen
+APICALL (14:44: 2:166 |    0)  11476; StopPlayout
+INFO    (14:44: 2:167 |    1)  11476; StopPlayout complete
+APICALL (14:44: 2:167 |    1)  11476; SetAudioMode
+INFO    (14:44: 2:168 |    1)  11476; [JNI] audioMode is set to 0
+INFO    (14:44: 2:171 |    3)  11476; [che] stop call returns 0, elapsed 94
+INFO    (14:44: 2:172 |    1)  11476; [rs] **report stats: seq: 29, report list size 11, tx/rx: 6187/1344, cache size: 0, report success rate: 100
+DEBUG   (14:44: 2:173 |    1)  11476; [ep] audio encoder/decoder 0/0 ms/50 frames
+DEBUG   (14:44: 2:173 |    0)  11476; [ep] sdk audio tx/rx time 0/0 video tx/rx time 0/0 ms/50 frames, total 0 ms
+DEBUG   (14:44: 2:173 |    0)  11476; [ep] pickup i/o 0/0 timer 901
+DEBUG   (14:44: 2:174 |    1)  11476; [ep] A/recoding bad A/playout good S/CPU unknown S/throughput bad
+DEBUG   (14:44: 2:174 |    0)  11476; start duration: 139 s, calc duration: 5099 ms, byte rate (kbps): tx=3, rx=0, total=3
+DEBUG   (14:44: 2:174 |    0)  11476; Remove a deprecated quality
+DEBUG   (14:44: 2:174 |    0)  11476; Remove a deprecated quality
+DEBUG   (14:44: 2:174 |    0)  11476; Remove a deprecated quality
+DEBUG   (14:44: 2:174 |    0)  11476; Remove a deprecated quality
+DEBUG   (14:44: 2:174 |    0)  11476; Remove a deprecated quality
+DEBUG   (14:44: 2:174 |    0)  11476; Remove a deprecated quality
+DEBUG   (14:44: 2:174 |    0)  11476; Remove a deprecated quality
+DEBUG   (14:44: 2:174 |    0)  11476; Remove a deprecated quality
+DEBUG   (14:44: 2:174 |    0)  11476; Remove a deprecated quality
+DEBUG   (14:44: 2:174 |    0)  11476; Remove a deprecated quality
+DEBUG   (14:44: 2:174 |    0)  11476; Remove a deprecated quality
+DEBUG   (14:44: 2:174 |    0)  11476; Remove a deprecated quality
+DEBUG   (14:44: 2:174 |    0)  11476; update video to client qos: -------
+DEBUG   (14:44: 2:174 |    0)  11476; Averaged 0 quality packages, lost: 0 (0/0)
+DEBUG   (14:44: 2:174 |    0)  11476; update video to vos qos: -------
+DEBUG   (14:44: 2:174 |    0)  11476; Averaged 0 quality packages, lost: 0 (0/0)
+DEBUG   (14:44: 2:174 |    0)  11476; update audio to client qos: -------
+DEBUG   (14:44: 2:174 |    0)  11476; Averaged 0 quality packages, lost: 0 (0/0)
+DEBUG   (14:44: 2:174 |    0)  11476; update audio to vos qos: -------
+DEBUG   (14:44: 2:174 |    0)  11476; Averaged 0 quality packages, lost: 0 (0/0)
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 0, id: 25, index: 43, value: 0
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 0, id: 36, index: 62, value: 3
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 0, id: 37, index: 63, value: 0
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 0, id: 147, index: 8, value: 0
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 0, id: 148, index: 11, value: 0
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 0, id: 184, index: 120, value: 0
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 0, id: 185, index: 121, value: 0
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 5, id: 19, index: 20, value: 0
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 5, id: 20, index: 21, value: 0
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 5, id: 188, index: 10, value: 0
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 10, id: 4, index: 3, value: 197
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 10, id: 26, index: 44, value: 2
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 10, id: 27, index: 45, value: 17
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 10, id: 119, index: 75, value: 10000
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 10, id: 144, index: 47, value: 8
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 10, id: 145, index: 46, value: 50
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 20, id: 3, index: 2, value: 67
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 20, id: 30, index: 48, value: 2
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 20, id: 31, index: 49, value: 1690
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 20, id: 32, index: 51, value: 1
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 20, id: 33, index: 52, value: 0
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 20, id: 34, index: 53, value: 1
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 20, id: 35, index: 54, value: 901
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 20, id: 40, index: 66, value: 5
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 20, id: 41, index: 67, value: 1
+DEBUG   (14:44: 2:174 |    0)  11476; priority: 20, id: 43, index: 68, value: 0
+DEBUG   (14:44: 2:174 |    0)  11476; start duration: 139 s, calc duration: 1099 ms, byte rate (kbps): tx=7, rx=0, total=7
+INFO    (14:44: 2:174 |    0)  11476; **CALL STATS: duration 2m19s, tx 60.107K bytes, rx 20.295K bytes, total 80.402K bytes
+INFO    (14:44: 2:174 |    0)  11476; CacheManager: save cache to storage elapsed 0
+DEBUG   (14:44: 2:175 |    1)  11476; [tactics] NetObserver disconstructor........
+INFO    (14:44: 2:175 |    0)  11476; [ch0] vos destroyed
+INFO    (14:44: 2:175 |    0)  11476; delRef of media engine, ref=0
+INFO    (14:44: 2:175 |    0)  11476; [che] chat engine destroying
+INFO    (14:44: 2:175 |    0)  11476; [che] stopCall begins
+INFO    (14:44: 2:175 |    0)  11476; [che] stop call returns -1, elapsed 0
+APICALL (14:44: 2:175 |    8)  11476; Terminate()
+INFO    (14:44: 2:175 |    0)  11479; Thread with name:EngineMonitorThread stopped
+APICALL (14:44: 2:185 |   10)  11476; StopSend
+APICALL (14:44: 2:185 |    0)  11476; StopPlayout
+DEBUG   (14:44: 2:185 |   10)  11476; RegisterVADCallback()
+DEBUG   (14:44: 2:185 |    0)  11477; Recording thread event signal
+DEBUG   (14:44: 2:185 |    0)  11477; Detaching rec thread from Java VM
+DEBUG   (14:44: 2:185 |    0)  11477; Sent signal rec
+DEBUG   (14:44: 2:185 |    0)  11477; Recording thread event signal
+INFO    (14:44: 2:185 |    0)  11477; Thread with name:jni_audio_capture_thread stopped
+DEBUG   (14:44: 2:185 |    0)  11478; Playout thread event signal
+DEBUG   (14:44: 2:185 |    0)  11478; Detaching thread from Java VM
+DEBUG   (14:44: 2:186 |    1)  11478; Sent signal
+DEBUG   (14:44: 2:186 |    0)  11478; Playout thread event signal
+INFO    (14:44: 2:186 |    0)  11478; Thread with name:jni_audio_render_thread stopped
+APICALL (14:44: 2:186 |    1)  11476; AudioEngineImpl self deleting (audioEngine=0x0x7a7a0258)
+MEMORY  (14:44: 2:186 |    0)  11476; VoEVideoSyncImpl::~VoEVideoSyncImpl() - dtor
+MEMORY  (14:44: 2:186 |    0)  11476; ChEVolumeControlImpl::~ChEVolumeControlImpl() - dtor
+MEMORY  (14:44: 2:186 |    0)  11476; ~ChENetworkImpl() - dtor
+MEMORY  (14:44: 2:186 |    0)  11476; ~ChEHardwareImpl() - dtor
+MEMORY  (14:44: 2:186 |    0)  11476; ~ChECodecImpl() - dtor
+MEMORY  (14:44: 2:186 |    0)  11476; ChEAudioProcessingImpl::~ChEAudioProcessingImpl() - dtor
+MEMORY  (14:44: 2:186 |    0)  11476; ~ChEBaseImpl() - dtor
+MEMORY  (14:44: 2:186 |    0)  11476; OutputMixer::~OutputMixer() - dtor
+MEMORY  (14:44: 2:186 |    0)  11476; Destroyed
+MEMORY  (14:44: 2:186 |    0)  11476; ~AudioDeviceModuleImpl destroyed
+MEMORY  (14:44: 2:186 |    0)  11476; ~AudioDeviceAndroidJni destroyed
+MEMORY  (14:44: 2:186 |    0)  11476; ~AudioDeviceExternal destroyed
+MEMORY  (14:44: 2:186 |    0)  11476; ~AudioDeviceUtilityAndroid destroyed
+MEMORY  (14:44: 2:186 |    0)  11476; ~AudioDeviceBuffer destroyed
+MEMORY  (14:44: 2:186 |    0)  11476; ~ProcessThreadImpl deleted
+INFO    (14:44: 2:187 |    1)  11476; [che] chat engine destroyed
+INFO    (14:44: 2:187 |    0)  11476; ***CALL END
+INFO    (14:44: 2:187 |    0)  11476; onAudioStatusChanged enable audio
+DEBUG   (14:44: 2:187 |    0)  11476; api call executed: rtc.api.leave_channel err 0
+INFO    (14:44: 2:190 |    3)  11476; [rs] **report stats: seq: 30, report list size 12, tx/rx: 6433/1344, cache size: 0, report success rate: 100
+DEBUG   (14:44: 2:190 |    0)  11476; api call executed: rtc.api.stop_engine err 0
+INFO    (14:44: 2:191 |    1)  11476; Agora Rtc Engine stopped
+INFO    (14:44: 2:191 |    0)  11402; async task worker thread exited gracefully
+INFO    (14:44: 2:191 |    0)  11402; CacheManager: save cache to storage elapsed 0
+INFO    (14:44: 2:191 |    0)  11402; CacheManager: save report cache to storage elapsed 0
+Local Date: Tue Nov 28 14:44:18 2017
+Build info: Nov 28 2017 01:10:46 r
+
+DEBUG   (14:44:18:701 |    1)  11575; api call executed: rtc.log_file err 0
+INFO    (14:44:18:706 |    5)  11532; API call to join channel 'yy' uid 0, SDK ver 2.0.0 build 210, device info 'meizu/m1 note/m1 note/m1note/19/3.10.48+'
+INFO    (14:44:18:706 |    0)  11575; ***CALL BEGIN: appid:'38****************************6f' cname:'yy' info:'388fd85980834cfd99d029abdf8bb26f' sid:'36629DBE944D494C9BC4D005CC77DA2F'
+INFO    (14:44:18:706 |    0)  11575; addRef of media engine, ref=1
+INFO    (14:44:18:706 |    0)  11575; [che] create chat engine, ctx:0x7cb30b74
+INFO    (14:44:18:707 |    1)  11575; use android device recording
+INFO    (14:44:18:707 |    0)  11575; ChatEngineParameterHelper::applyMediaEngineMode: 
+INFO    (14:44:18:707 |    0)  11575; Device type: 96
+INFO    (14:44:18:707 |    0)  11575; applyMediaEngineMode(): Hardware encoding true Hardware decoding false
+MEMORY  (14:44:18:707 |    0)  11575; ProcessThreadImpl created
+MEMORY  (14:44:18:707 |    0)  11575; AudioDeviceBuffer created
+MEMORY  (14:44:18:707 |    0)  11575; AudioDeviceModuleImpl created
+MEMORY  (14:44:18:707 |    0)  11575; AudioDeviceExternalExtend created
+INFO    (14:44:18:707 |    0)  11575; output: kPlatformDefaultAudio
+MEMORY  (14:44:18:707 |    0)  11575; AudioDeviceAndroidJni created
+MEMORY  (14:44:18:707 |    0)  11575; AudioDeviceUtilityAndroid created
+MEMORY  (14:44:18:707 |    0)  11575; AudioDeviceExternal created
+MEMORY  (14:44:18:707 |    0)  11575; AudioDeviceBuffer::SetId(id=1)
+MEMORY  (14:44:18:707 |    0)  11575; AudioDeviceBuffer::SetRecordingSampleRate(fsHz=48000)
+MEMORY  (14:44:18:707 |    0)  11575; AudioDeviceBuffer::SetPlayoutSampleRate(fsHz=48000)
+MEMORY  (14:44:18:707 |    0)  11575; AudioDeviceBuffer::SetRecordingChannels(channels=1)
+MEMORY  (14:44:18:707 |    0)  11575; AudioDeviceBuffer::SetPlayoutChannels(channels=1)
+MEMORY  (14:44:18:708 |    1)  11575; Created
+MEMORY  (14:44:18:708 |    0)  11575; OutputMixer::Create(instanceId=1)
+MEMORY  (14:44:18:709 |    1)  11575; OutputMixer::OutputMixer() - ctor
+MEMORY  (14:44:18:709 |    0)  11575; ChEBaseImpl() - ctor
+MEMORY  (14:44:18:709 |    0)  11575; ChEAudioProcessingImpl::ChEAudioProcessingImpl() - ctor
+MEMORY  (14:44:18:709 |    0)  11575; ChECodecImpl() - ctor
+MEMORY  (14:44:18:709 |    0)  11575; ChEHardwareImpl() - ctor
+MEMORY  (14:44:18:709 |    0)  11575; ChENetworkImpl() - ctor
+MEMORY  (14:44:18:709 |    0)  11575; ChEVolumeControlImpl::ChEVolumeControlImpl() - ctor
+MEMORY  (14:44:18:709 |    0)  11575; VoEVideoSyncImpl::VoEVideoSyncImpl() - ctor
+APICALL (14:44:18:709 |    0)  11575; RegisterAudioEngineObserver(observer=0x2056947468)
+APICALL (14:44:18:709 |    0)  11575; Init()
+INFO    (14:44:18:709 |    0)  11575;   OS info: Android
+DEBUG   (14:44:18:709 |    0)  11575; get method id
+DEBUG   (14:44:18:713 |    4)  11575; construct object
+INFO    (14:44:18:713 |    0)  11575; [JNI] use native sampling rate : 44100
+INFO    (14:44:18:714 |    1)  11580; Thread with name:jni_audio_capture_thread started 
+INFO    (14:44:18:714 |    0)  11581; Thread with name:jni_audio_render_thread started 
+INFO    (14:44:18:714 |    0)  11582; Thread with name:external_audio_module_thread started 
+INFO    (14:44:18:714 |    0)  11583; Thread with name:WebRtc_event_timer_thread started 
+MEMORY  (14:44:18:714 |    0)  11575; AudioDeviceBuffer::SetRecordingSampleRate(fsHz=16000)
+MEMORY  (14:44:18:715 |    1)  11575; AudioDeviceBuffer::SetPlayoutSampleRate(fsHz=16000)
+MEMORY  (14:44:18:715 |    0)  11575; AudioDeviceBuffer::SetRecordingChannels(channels=1)
+MEMORY  (14:44:18:715 |    0)  11575; AudioDeviceBuffer::SetPlayoutChannels(channels=1)
+INFO    (14:44:18:715 |    0)  11575; [JNI] playback device is set to 0
+INFO    (14:44:18:715 |    0)  11575; [JNI] recording device is set to 0
+INFO    (14:44:18:715 |    0)  11575; Set stereo playback available = 0
+INFO    (14:44:18:715 |    0)  11575; StereoPlayoutIsAvailable(), output: available=0
+MEMORY  (14:44:18:715 |    0)  11575; AudioDeviceBuffer::SetPlayoutChannels(channels=1)
+INFO    (14:44:18:715 |    0)  11575; StereoRecordingIsAvailable(), output: available=0
+MEMORY  (14:44:18:715 |    0)  11575; AudioDeviceBuffer::SetRecordingChannels(channels=1)
+DEBUG   (14:44:18:715 |    0)  11575; RegisterVADCallback()
+INFO    (14:44:18:716 |    1)  11584; Thread with name:EngineMonitorThread started 
+APICALL (14:44:18:716 |    7)  11575; EnableNearEndMusicDetection enable = 1
+INFO    (14:44:18:716 |    0)  11575; setMuteStatus, muted: Off
+APICALL (14:44:18:716 |    0)  11575; SetNearendPitchSmootherStatus()
+APICALL (14:44:18:716 |    0)  11575; SetNearendTransSuppStatus()
+APICALL (14:44:18:716 |    0)  11575; SetNearendIntelligibilityStatus() = 0
+APICALL (14:44:18:716 |    0)  11575; SetMuteOutput(mute=0)
+INFO    (14:44:18:716 |    0)  11575; setMuteOutput, muted: false
+APICALL (14:44:18:716 |    0)  11575; SetMicrophoneMute()
+WARN    (14:44:18:716 |    0)  11575;   API call not supported on this platform
+APICALL (14:44:18:716 |    0)  11575; SetSpeakerMute()
+WARN    (14:44:18:716 |    0)  11575;   API call not supported on this platform
+APICALL (14:44:18:716 |    0)  11575; setMicSensitivity, Gain = -2 dB
+WARN    (14:44:18:716 |    0)  11575; setMicSensitivity failed, legal values are between [0, 10]
+ERROR   (14:44:18:716 |    0)  11575; Agora Engine does NOT support raw report interval = -1
+INFO    (14:44:18:716 |    0)  11575; Audio Engine Init success
+DEBUG   (14:44:18:716 |    0)  11575; async_queue created: 0x7a7d09e8
+INFO    (14:44:18:716 |    0)  11575; [che] chat engine initialized
+DEBUG   (14:44:18:716 |    0)  11575; [tactics]: onJoinChannel version:2000-0101 dualLinkd:0 good:0 poor:0 chanMode:0 fps:15 resolution:640X360 videoMaxBitRate:400 localDevice:0 peerDevice:0 localNetType:WIFI
+INFO    (14:44:18:716 |    0)  11575; [tactics] version:2.0.0 maxBitrate:400 640X360 15 fps needHandle:1
+INFO    (14:44:18:716 |    0)  11575; [tactics] config json version:20150101-0000 duallinkd:true poor:u
+INFO    (14:44:18:717 |    1)  11575; [tactics] parse config for beckon error for tactics size:15
+INFO    (14:44:18:717 |    0)  11575; [vocs] vocs initialized
+DEBUG   (14:44:18:720 |    3)  11575; [ep] A/recoding unknown A/playout unknown S/CPU unknown S/throughput unknown
+INFO    (14:44:18:720 |    0)  11575; CacheManager: save cache to storage elapsed 0
+INFO    (14:44:18:720 |    0)  11575; [cm] emit join channel signal, size=3
+INFO    (14:44:18:720 |    0)  11575; [rs] report server ip: 221.6.115.123:8000
+INFO    (14:44:18:721 |    1)  11575; [rlbs] selected: 221.228.78.123:9700
+INFO    (14:44:18:721 |    0)  11575; [rlbs] request rs list from 221.228.78.123:9700.......
+DEBUG   (14:44:18:722 |    1)  11575; [rs] start to send cached report, items count: 0
+DEBUG   (14:44:18:722 |    0)  11575; [tactics]: onJoinChannel version:20150101-0000 dualLinkd:1 good:20 poor:30 chanMode:0 fps:15 resolution:640X360 videoMaxBitRate:400 localDevice:0 peerDevice:0 localNetType:WIFI
+INFO    (14:44:18:722 |    0)  11575; [tactics] version:2.0.0 maxBitrate:400 640X360 15 fps needHandle:1
+INFO    (14:44:18:722 |    0)  11575; [vocs] lookup channel...
+INFO    (14:44:18:722 |    0)  11575; [vocs] selected: 119.9.92.49:8000
+INFO    (14:44:18:723 |    1)  11575; connecting to 119.9.92.49:8000 handle 7d8b9008, 116
+INFO    (14:44:18:723 |    0)  11575; [vocs] creating channel with 119.9.92.49:8000, ts 1511851458723.......
+INFO    (14:44:18:723 |    0)  11575; [vocs] selected: 69.28.51.138:8000
+INFO    (14:44:18:723 |    0)  11575; [vocs] creating channel with 69.28.51.138:8000, ts 1511851458723.......
+INFO    (14:44:18:723 |    0)  11575; [vocs] selected: 123.155.153.69:8000
+INFO    (14:44:18:723 |    0)  11575; [vocs] creating channel with 123.155.153.69:8000, ts 1511851458723.......
+DEBUG   (14:44:18:723 |    0)  11575; api call executed: rtc.api.join_channel err 0
+INFO    (14:44:18:732 |    9)  11575; [rlbs/u] responsed from 221.228.78.123:9700 with servers 112.90.208.174:8000
+INFO    (14:44:18:738 |    6)  11575; [vocs/u] **responsed from 123.155.153.69:8000, 3 vos, elapsed 32, server ts 1511851443439, wan ip 210.22.82.233
+INFO    (14:44:18:738 |    0)  11575; [vos] added server: 112.90.208.171:4009
+INFO    (14:44:18:738 |    0)  11575; [vos] added server: 110.53.183.238:4001
+INFO    (14:44:18:738 |    0)  11575; [vos] added server: 101.69.223.3:4005
+INFO    (14:44:18:739 |    1)  11575; [ch0] vos initialized
+INFO    (14:44:18:739 |    0)  11575; [vos] selected: 101.69.223.3:4005
+INFO    (14:44:18:739 |    0)  11575; [ds]: ver 1 ds '{"streamType":1,"clientRole":1}'
+INFO    (14:44:18:739 |    0)  11575; [ch0] Login VOS (proto:9, cid:1343759702, uid:1902712083, ts:1511851458739, ticket size:72 ds:1 stream:+A-V) 2: 101.69.223.3:4005
+INFO    (14:44:18:739 |    0)  11575; add ping address 210.22.82.233
+INFO    (14:44:18:739 |    0)  11575; PING 210.22.82.233:0 16(44) bytes of data
+INFO    (14:44:18:757 |   18)  11575; [ch0] **VOS response to login request (res 0 elapsed 50, server ts 1511851443477, s-c:-15280) from 101.69.223.3:4005
+INFO    (14:44:18:757 |    0)  11575; [vocs] selected: 183.236.26.162:8000
+INFO    (14:44:18:758 |    1)  11575; connecting to 183.236.26.162:8000 handle 79e751a0, 107
+INFO    (14:44:18:758 |    0)  11575; [vocs] login with multi ip {"vocs_ip":["210.22.82.233"],"vos_ip":["123.155.153.87"]}
+INFO    (14:44:18:758 |    0)  11575; [vocs] creating channel with 183.236.26.162:8000, ts 1511851458758.......
+INFO    (14:44:18:758 |    0)  11575; [vocs] selected: 69.28.51.138:8000
+INFO    (14:44:18:758 |    0)  11575; [vocs] login with multi ip {"vocs_ip":["210.22.82.233"],"vos_ip":["123.155.153.87"]}
+INFO    (14:44:18:758 |    0)  11575; [vocs] creating channel with 69.28.51.138:8000, ts 1511851458758.......
+INFO    (14:44:18:758 |    0)  11575; [vocs] selected: 221.228.202.134:8000
+INFO    (14:44:18:758 |    0)  11575; [vocs] login with multi ip {"vocs_ip":["210.22.82.233"],"vos_ip":["123.155.153.87"]}
+INFO    (14:44:18:758 |    0)  11575; [vocs] creating channel with 221.228.202.134:8000, ts 1511851458758.......
+DEBUG   (14:44:18:769 |   11)  11532; [AudioRoute] StopState: onEvent: 20, info: 1
+DEBUG   (14:44:18:772 |    3)  11532; [AudioRoute] StopState: onEvent: 11, info: 0
+INFO    (14:44:18:772 |    0)  11575; [vocs/u] **responsed from 221.228.202.134:8000, 3 vos, elapsed 66, server ts 1511851444253, wan ip 210.22.82.232
+INFO    (14:44:18:773 |    1)  11575; [vos] added server: 112.90.208.170:4001
+INFO    (14:44:18:773 |    0)  11575; [vos] added server: 110.53.183.240:4001
+INFO    (14:44:18:773 |    0)  11575; [vos] added server: 101.69.223.6:4005
+INFO    (14:44:18:773 |    0)  11575; [vos] selected: 101.69.223.6:4005
+INFO    (14:44:18:773 |    0)  11575; [ds]: ver 1 ds '{"streamType":1,"clientRole":1}'
+INFO    (14:44:18:773 |    0)  11575; [ch0] Login VOS (proto:9, cid:1343759702, uid:1902712083, ts:1511851458773, ticket size:72 ds:1 stream:+A-V) 2: 101.69.223.6:4005
+INFO    (14:44:18:773 |    0)  11575; add ping address 210.22.82.232
+INFO    (14:44:18:773 |    0)  11575; PING 210.22.82.232:0 16(44) bytes of data
+INFO    (14:44:18:775 |    2)  11575; [rp] {"che.audio.output.routing":1}
+APICALL (14:44:18:775 |   59)  11575; SetAPMMagicIDRouting(magic_id = 96, routing = 1)
+APICALL (14:44:18:775 |    0)  11575; GetAgcConfig(config=?)
+APICALL (14:44:18:775 |    0)  11575; SetEcStatus(enable=1, mode=3)
+APICALL (14:44:18:775 |    0)  11575; SetEcMetricsStatus(enable=1)
+APICALL (14:44:18:775 |    0)  11575; SetDelayOffsetMs(offset = 200)
+APICALL (14:44:18:775 |    0)  11575; EnableAutoDelayOffset(enable = 1)
+APICALL (14:44:18:775 |    0)  11575; SetNsStatus(enable=1, mode=5)
+APICALL (14:44:18:776 |    1)  11575; SetAgcStatus(enable=1, mode=3)
+APICALL (14:44:18:776 |    0)  11575; SetAgcConfig()
+APICALL (14:44:18:776 |    0)  11575; SetDualChannelProcessing(enabled=0)
+APICALL (14:44:18:776 |    0)  11575; SetBssStatus(enable=0)
+INFO    (14:44:18:776 |    1)  11575; SetHowlingControl enable = 0
+APICALL (14:44:18:776 |    0)  11575; EnableNearEndMusicDetection enable = 1
+APICALL (14:44:18:776 |    0)  11575; SetNearendPitchSmootherStatus()
+INFO    (14:44:18:776 |    0)  11575; Application Config module:  Route 1, NS on, AEC C, AGC on, BSS off, HC on
+INFO    (14:44:18:776 |    0)  11575; MID = 96, Routing = 1
+DEBUG   (14:44:18:776 |    0)  11575; api call executed: che.audio.output.routing err 0
+INFO    (14:44:18:792 |   16)  11575; [ch0] **VOS response to login request (res 0 elapsed 85, server ts 1511851443520, s-c:-15272) from 101.69.223.6:4005
+INFO    (14:44:18:792 |    0)  11575; updateActiveVosList: ["101.69.223.6:4005"]
+DEBUG   (14:44:18:792 |    0)  11575; [che] isCalling res:false****
+INFO    (14:44:18:792 |    0)  11575; [che] start call begins
+INFO    (14:44:18:792 |    0)  11575; Set Application Mode in RTC Engine to No. 4
+INFO    (14:44:18:792 |    0)  11575; Set Application Mode details solo 1, extend 0, audience 0, br 128000, streamType 1
+APICALL (14:44:18:792 |   16)  11575; GetCodec(index=0, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=1, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=2, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=3, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=4, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=5, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=6, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=7, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=8, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=9, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=10, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=11, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=12, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=13, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=14, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=15, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=16, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=17, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=18, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=0, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=1, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=2, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=3, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=4, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=5, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=6, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=7, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=8, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=9, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=10, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=11, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=12, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=13, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=14, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=15, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=16, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=17, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=0, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=1, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=2, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=3, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=4, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=5, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=6, codec=?)
+DEBUG   (14:44:18:792 |    0)  11574; [AudioRoute] sendEvent: [21], extra arg: 20... Handler (io.agora.rtc.internal.AudioRoutingController$EventHandler) {429ce500}
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=7, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=8, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=0, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=1, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=2, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=3, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=4, codec=?)
+APICALL (14:44:18:792 |    0)  11575; GetCodec(index=5, codec=?)
+APICALL (14:44:18:793 |    1)  11575; GetCodec(index=6, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=7, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=8, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=9, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=0, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=1, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=2, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=3, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=4, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=5, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=6, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=7, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=8, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=9, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=10, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=0, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=1, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=2, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=3, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=4, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=5, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=6, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=7, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=8, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=9, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=10, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=11, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=12, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=13, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=14, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=15, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=16, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=17, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=18, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=19, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=20, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=21, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=22, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=23, codec=?)
+APICALL (14:44:18:793 |    0)  11575; GetCodec(index=23, codec=?)
+INFO    (14:44:18:793 |    1)  11575; SetCodec by type : No. 77
+APICALL (14:44:18:793 |    0)  11575; SetSendCodec(codec)
+INFO    (14:44:18:796 |    3)  11575; Setting dtx mode to 0
+APICALL (14:44:18:796 |    3)  11575; SetVADStatus(enable=0, mode=2, disableDTX=1)
+APICALL (14:44:18:796 |    0)  11575; SetDtxMode(mode=0)
+APICALL (14:44:18:796 |    0)  11575; SetDtxMode(mode=0)
+APICALL (14:44:18:796 |    0)  11575; SetRecordingDevice(index=1, recordingChannel=2)
+WARN    (14:44:18:796 |    0)  11575; SetRecordingChannel() unable to set the recording channel (error=10028)
+INFO    (14:44:18:796 |    0)  11575; [JNI] recording device is set to 1
+INFO    (14:44:18:796 |    0)  11575; StereoRecordingIsAvailable(), output: available=0
+INFO    (14:44:18:796 |    0)  11575; SetRecordingDevicePart2:SetStereoRecording, stereo recording=0
+MEMORY  (14:44:18:796 |    0)  11575; AudioDeviceBuffer::SetRecordingChannels(channels=1)
+APICALL (14:44:18:796 |    0)  11575; SetAudioMode
+INFO    (14:44:18:796 |    0)  11575; [JNI] audioMode is set to 0
+APICALL (14:44:18:800 |    4)  11575; GetCodec(index=23, codec=?)
+APICALL (14:44:18:800 |    0)  11575; SetSendCodec(codec)
+APICALL (14:44:18:800 |    0)  11575; StartReceive
+APICALL (14:44:18:800 |    0)  11575; StartPlayout
+MEMORY  (14:44:18:800 |    4)  11575; InitPlayout
+INFO    (14:44:18:805 |    5)  11575; StartPlayout complete
+APICALL (14:44:18:805 |    5)  11575; StartSend
+INFO    (14:44:18:805 |    0)  11575; output: NOT_SUPPORTED
+MEMORY  (14:44:18:805 |    0)  11575; InitRecording
+DEBUG   (14:44:18:834 |   29)  11532; [AudioRoute] StopState: onEvent: 21, info: 20
+INFO    (14:44:19: 44 |    0)  11575; StartRecording complete
+APICALL (14:44:19: 46 |    0)  11575; QueryLoudspeakerStatus(route=1)
+APICALL (14:44:19: 46 |    0)  11575; SetAPMMagicIDRouting(magic_id = 96, routing = 1)
+APICALL (14:44:19: 46 |    0)  11575; SetEcStatus(enable=0, mode=0)
+APICALL (14:44:19: 46 |    0)  11575; SetEcStatus(enable=0, mode=0)
+APICALL (14:44:19: 46 |    0)  11575; SetNsStatus(enable=0, mode=5)
+APICALL (14:44:19: 47 |    1)  11575; SetAgcStatus(enable=0, mode=3)
+APICALL (14:44:19: 47 |    0)  11575; SetAgcConfig()
+APICALL (14:44:19: 47 |    0)  11575; SetDualChannelProcessing(enabled=0)
+APICALL (14:44:19: 47 |    0)  11575; SetBssStatus(enable=0)
+APICALL (14:44:19: 47 |    0)  11575; EnableNearEndMusicDetection enable = 0
+APICALL (14:44:19: 47 |    0)  11575; SetNearendPitchSmootherStatus()
+INFO    (14:44:19: 47 |    3)  11575; Application Config module:  Route 1, NS off, AEC N, AGC off, BSS off, HC off
+INFO    (14:44:19: 47 |    0)  11575; MID = 96, Routing = 1
+INFO    (14:44:19: 47 |    0)  11575; [che] start call returns 0, elapsed 255
+INFO    (14:44:19: 47 |    0)  11575; Setting dtx mode to 0
+APICALL (14:44:19: 47 |    0)  11575; SetVADStatus(enable=0, mode=2, disableDTX=1)
+APICALL (14:44:19: 47 |    0)  11575; SetDtxMode(mode=0)
+APICALL (14:44:19: 47 |    0)  11575; SetDtxMode(mode=0)
+INFO    (14:44:19: 47 |    0)  11575; setNetEQMinimumPlayoutDelay delay(100)
+APICALL (14:44:19: 47 |    0)  11575; SetNetEQMinimumPlayoutDelay(delay=100 ms)
+INFO    (14:44:19: 47 |    0)  11575; join channel success: cname 'yy' uid 1902712083 elapsed 340
+DEBUG   (14:44:19: 47 |    0)  11575; [ch0] ping1 (cid:1343759702, uid:1902712083, sync:1): 101.69.223.6:4005
+DEBUG   (14:44:19: 47 |    0)  11575; [ch1343759702] usersStreamInfoReq (cid:1902712083, uid:2407003788)
+INFO    (14:44:19: 47 |    0)  11575; [vocs/u] **responsed from 183.236.26.162:8000, 3 vos, elapsed 341, server ts 1511851443413, wan ip 210.22.82.232
+INFO    (14:44:19: 47 |    0)  11575; [vos] added server: 112.90.208.174:4009
+INFO    (14:44:19: 47 |    0)  11575; [vos] added server: 110.53.183.243:4006
+INFO    (14:44:19: 47 |    0)  11575; [vos] added server: 101.69.223.5:4005
+INFO    (14:44:19: 47 |    0)  11575; [vocs/u] **responsed from 69.28.51.138:8000, 3 vos, elapsed 341, server ts 1511851443568, wan ip 210.22.82.232
+INFO    (14:44:19: 47 |    0)  11575; [vos] added server: 112.90.208.163:4009
+INFO    (14:44:19: 47 |    0)  11575; [vos] added server: 110.53.183.240:4008
+INFO    (14:44:19: 47 |    0)  11575; [vos] added server: 101.69.223.6:4006
+INFO    (14:44:19: 48 |    1)  11575; onFirstLocalAudioFrame codec 77 elapsed 341
+INFO    (14:44:19: 49 |    1)  11574; [AudioRoute] reset audio routing, default routing: Speakerphone, current routing: Default, target routing: Earpiece, actual system routing: Earpiece
+INFO    (14:44:19: 49 |    0)  11574; [AudioRoute] set audio output routing from Default to Earpiece
+DEBUG   (14:44:19: 50 |    1)  11574; [AudioRoute] updateBluetoothSco sco started: false, audio route target: 1[Earpiece] current: -1[Default], engine role: 20
+INFO    (14:44:19: 50 |    0)  11574; [AudioRoute] audio routing changed to Earpiece
+INFO    (14:44:19: 50 |    0)  11575; [rp] {"che.audio.output.routing":1}
+INFO    (14:44:19: 51 |    1)  11574; [AudioRoute] Monitor start: default routing: Speakerphone, current routing: Earpiece
+APICALL (14:44:19: 68 |   21)  11575; SetAPMMagicIDRouting(magic_id = 96, routing = 1)
+APICALL (14:44:19: 68 |    0)  11575; SetEcStatus(enable=0, mode=0)
+APICALL (14:44:19: 68 |    0)  11575; SetEcStatus(enable=0, mode=0)
+APICALL (14:44:19: 68 |    0)  11575; SetNsStatus(enable=0, mode=5)
+APICALL (14:44:19: 68 |    0)  11575; SetAgcStatus(enable=0, mode=3)
+APICALL (14:44:19: 68 |    0)  11575; SetAgcConfig()
+ERROR   (14:44:19: 68 |   17)  11575; SetAgcConfig() failed to set hard limiter to the signal (error=8097)
+APICALL (14:44:19: 68 |    0)  11575; SetDualChannelProcessing(enabled=0)
+APICALL (14:44:19: 68 |    0)  11575; SetBssStatus(enable=0)
+APICALL (14:44:19: 68 |    0)  11575; EnableNearEndMusicDetection enable = 0
+APICALL (14:44:19: 68 |    0)  11575; SetNearendPitchSmootherStatus()
+INFO    (14:44:19: 68 |    0)  11575; Application Config module:  Route 1, NS off, AEC N, AGC off, BSS off, HC off
+INFO    (14:44:19: 69 |    1)  11575; MID = 96, Routing = 1
+DEBUG   (14:44:19: 69 |    0)  11575; api call executed: che.audio.output.routing err 0
+DEBUG   (14:44:19: 69 |    0)  11575; [ch0] pong1 (cid:1343759702, uid:1902712083, sync:1): 101.69.223.6:4005
+DEBUG   (14:44:19: 69 |    0)  11575; [ch0] ping2 (cid:1343759702, uid:1902712083): 101.69.223.6:4005
+INFO    (14:44:19: 69 |    0)  11575; [ch0] rtt: 22
+DEBUG   (14:44:19: 69 |    0)  11575; calc audio vos qos: -------
+DEBUG   (14:44:19: 69 |    0)  11575; [ch0] to client: unknown 0/0, to vos: unknown 0/0
+DEBUG   (14:44:19: 69 |    0)  11575; OnPong and lost tx: 0 rx:2056958560
+DEBUG   (14:44:19: 69 |    0)  11575; calc video vos qos: -------
+DEBUG   (14:44:19: 69 |    0)  11575; [ch0] to client: unknown 0/0, to vos: unknown 0/0
+DEBUG   (14:44:19: 69 |    0)  11575; OnPong and lost tx: 0 rx:2056958560
+DEBUG   (14:44:19: 69 |    0)  11575; calc a+v vos qos: -------
+DEBUG   (14:44:19: 69 |    0)  11575; [ch0] to client: unknown 0/0, to vos: unknown 0/0
+DEBUG   (14:44:19: 69 |    0)  11575; OnPong and lost tx: 0 rx:2056958560
+DEBUG   (14:44:19: 69 |    0)  11575; updateUsersStreamInfo, {uid:1902712083,type:4}
+DEBUG   (14:44:19:714 |  645)  11580; Recording thread event timeout
+DEBUG   (14:44:19:714 |    0)  11581; Playout thread event timeout
+DEBUG   (14:44:19:757 |   43)  11575; [vocs] job done, timer canceled
+DEBUG   (14:44:19:807 |   50)  11575; Paced sender video rexfer target bitrate 276.
+
+DEBUG   (14:44:20:552 |    0)  11532; [AudioRoute] cancel bluetooth timer
+INFO    (14:44:20:552 |    0)  11532; [AudioRoute] Monitor stopped
+INFO    (14:44:20:552 |    0)  11532; API call to leave channel
+INFO    (14:44:20:553 |    1)  11575; [cm] emit leave channel signal
+INFO    (14:44:20:555 |    2)  11532; Detach external video source from pipeline
+DEBUG   (14:44:20:555 |    0)  11532; [AudioRoute] uninitialize
+INFO    (14:44:20:556 |    1)  11532; android destroy
+DEBUG   (14:44:20:714 |  158)  11580; Recording thread event timeout
+DEBUG   (14:44:20:714 |    0)  11581; Playout thread event timeout
+INFO    (14:44:20:873 |  159)  11575; [che] stopCall begins
+APICALL (14:44:20:873 |  805)  11575; StopDebugRecording()
+APICALL (14:44:20:873 |    0)  11575; StopSend
+INFO    (14:44:20:873 |    0)  11575; StopRecording complete
+APICALL (14:44:20:874 |    1)  11575; StopListen
+APICALL (14:44:20:874 |    0)  11575; StopPlayout
+INFO    (14:44:20:874 |    1)  11575; StopPlayout complete
+APICALL (14:44:20:874 |    0)  11575; SetAudioMode
+INFO    (14:44:20:874 |    0)  11575; [JNI] audioMode is set to 0
+INFO    (14:44:20:875 |    1)  11575; [che] stop call returns 0, elapsed 2
+INFO    (14:44:20:875 |    0)  11575; [rs] **report stats: seq: 7, report list size 7, tx/rx: 1223/288, cache size: 0, report success rate: -1
+DEBUG   (14:44:20:877 |    2)  11575; [ep] audio encoder/decoder 0/1296 ms/50 frames
+DEBUG   (14:44:20:877 |    0)  11575; [ep] sdk audio tx/rx time 1/0 video tx/rx time 0/0 ms/50 frames, total 1 ms
+DEBUG   (14:44:20:877 |    0)  11575; [ep] pickup i/o 0/0 timer 0
+DEBUG   (14:44:20:877 |    0)  11575; start duration: 2 s, calc duration: 2000 ms, byte rate (kbps): tx=0, rx=0, total=0
+INFO    (14:44:20:877 |    0)  11575; **CALL STATS: duration 2s, tx 15.169K bytes, rx 2.383K bytes, total 17.552K bytes
+INFO    (14:44:20:878 |    1)  11575; CacheManager: save cache to storage elapsed 0
+DEBUG   (14:44:20:878 |    0)  11575; [tactics] NetObserver disconstructor........
+INFO    (14:44:20:878 |    0)  11575; [ch0] vos destroyed
+INFO    (14:44:20:878 |    0)  11575; delRef of media engine, ref=0
+INFO    (14:44:20:878 |    0)  11575; [che] chat engine destroying
+INFO    (14:44:20:878 |    0)  11575; [che] stopCall begins
+INFO    (14:44:20:878 |    0)  11575; [che] stop call returns -1, elapsed 0
+APICALL (14:44:20:878 |    4)  11575; Terminate()
+INFO    (14:44:20:878 |    0)  11584; Thread with name:EngineMonitorThread stopped
+APICALL (14:44:20:888 |   10)  11575; StopSend
+APICALL (14:44:20:888 |    0)  11575; StopPlayout
+DEBUG   (14:44:20:888 |   10)  11575; RegisterVADCallback()
+DEBUG   (14:44:20:888 |    0)  11580; Recording thread event signal
+DEBUG   (14:44:20:888 |    0)  11580; Detaching rec thread from Java VM
+DEBUG   (14:44:20:889 |    1)  11580; Sent signal rec
+DEBUG   (14:44:20:889 |    0)  11580; Recording thread event signal
+INFO    (14:44:20:889 |    0)  11580; Thread with name:jni_audio_capture_thread stopped
+DEBUG   (14:44:20:899 |   10)  11581; Playout thread event signal
+DEBUG   (14:44:20:899 |    0)  11581; Detaching thread from Java VM
+DEBUG   (14:44:20:899 |    0)  11581; Sent signal
+DEBUG   (14:44:20:899 |    0)  11581; Playout thread event signal
+INFO    (14:44:20:899 |    0)  11581; Thread with name:jni_audio_render_thread stopped
+INFO    (14:44:20:909 |   10)  11582; Thread with name:external_audio_module_thread stopped
+INFO    (14:44:20:919 |   10)  11583; Thread with name:WebRtc_event_timer_thread stopped
+APICALL (14:44:20:929 |   41)  11575; AudioEngineImpl self deleting (audioEngine=0x0x7a9acb88)
+MEMORY  (14:44:20:929 |   10)  11575; VoEVideoSyncImpl::~VoEVideoSyncImpl() - dtor
+MEMORY  (14:44:20:929 |    0)  11575; ChEVolumeControlImpl::~ChEVolumeControlImpl() - dtor
+MEMORY  (14:44:20:929 |    0)  11575; ~ChENetworkImpl() - dtor
+MEMORY  (14:44:20:929 |    0)  11575; ~ChEHardwareImpl() - dtor
+MEMORY  (14:44:20:929 |    0)  11575; ~ChECodecImpl() - dtor
+MEMORY  (14:44:20:929 |    0)  11575; ChEAudioProcessingImpl::~ChEAudioProcessingImpl() - dtor
+MEMORY  (14:44:20:929 |    0)  11575; ~ChEBaseImpl() - dtor
+MEMORY  (14:44:20:929 |    0)  11575; OutputMixer::~OutputMixer() - dtor
+MEMORY  (14:44:20:930 |    1)  11575; Destroyed
+MEMORY  (14:44:20:930 |    0)  11575; ~AudioDeviceModuleImpl destroyed
+MEMORY  (14:44:20:930 |    0)  11575; ~AudioDeviceAndroidJni destroyed
+MEMORY  (14:44:20:930 |    0)  11575; ~AudioDeviceExternal destroyed
+MEMORY  (14:44:20:930 |    0)  11575; ~AudioDeviceUtilityAndroid destroyed
+MEMORY  (14:44:20:930 |    0)  11575; ~AudioDeviceExternalExtend destroyed
+MEMORY  (14:44:20:930 |    0)  11575; ~AudioDeviceBuffer destroyed
+MEMORY  (14:44:20:930 |    0)  11575; ~ProcessThreadImpl deleted
+INFO    (14:44:20:930 |    0)  11575; [che] chat engine destroyed
+INFO    (14:44:20:930 |    0)  11575; ***CALL END
+INFO    (14:44:20:931 |    1)  11575; onAudioStatusChanged enable audio
+DEBUG   (14:44:20:931 |    0)  11575; api call executed: rtc.api.leave_channel err 0
+INFO    (14:44:20:933 |    2)  11575; [rs] **report stats: seq: 7, report list size 7, tx/rx: 1223/288, cache size: 0, report success rate: -1
+DEBUG   (14:44:20:933 |    0)  11575; api call executed: rtc.api.stop_engine err 0
+INFO    (14:44:20:933 |    0)  11575; Agora Rtc Engine stopped
+INFO    (14:44:20:933 |    0)  11532; async task worker thread exited gracefully
+INFO    (14:44:20:933 |    0)  11532; CacheManager: save cache to storage elapsed 0
+INFO    (14:44:20:934 |    1)  11532; CacheManager: save report cache to storage elapsed 0
+Local Date: Tue Nov 28 14:44:22 2017
+Build info: Nov 28 2017 01:10:46 r
+
+DEBUG   (14:44:22:642 |    4)  11595; api call executed: rtc.log_file err 0
+INFO    (14:44:22:642 |    0)  11532; API call to join channel 'yy' uid 0, SDK ver 2.0.0 build 210, device info 'meizu/m1 note/m1 note/m1note/19/3.10.48+'
+INFO    (14:44:22:642 |    0)  11595; ***CALL BEGIN: appid:'38****************************6f' cname:'yy' info:'388fd85980834cfd99d029abdf8bb26f' sid:'B126656A79484349816558CC7E09F717'
+INFO    (14:44:22:642 |    0)  11595; addRef of media engine, ref=1
+INFO    (14:44:22:642 |    0)  11595; [che] create chat engine, ctx:0x7d28fb74
+INFO    (14:44:22:643 |    1)  11595; use android device recording
+INFO    (14:44:22:643 |    0)  11595; ChatEngineParameterHelper::applyMediaEngineMode: 
+INFO    (14:44:22:643 |    0)  11595; Device type: 96
+INFO    (14:44:22:643 |    0)  11595; applyMediaEngineMode(): Hardware encoding true Hardware decoding false
+MEMORY  (14:44:22:643 |    0)  11595; ProcessThreadImpl created
+MEMORY  (14:44:22:643 |    0)  11595; AudioDeviceBuffer created
+MEMORY  (14:44:22:643 |    0)  11595; AudioDeviceModuleImpl created
+INFO    (14:44:22:643 |    0)  11595; output: kPlatformDefaultAudio
+MEMORY  (14:44:22:643 |    0)  11595; AudioDeviceAndroidJni created
+MEMORY  (14:44:22:643 |    0)  11595; AudioDeviceUtilityAndroid created
+MEMORY  (14:44:22:643 |    0)  11595; AudioDeviceExternal created
+MEMORY  (14:44:22:643 |    0)  11595; AudioDeviceBuffer::SetId(id=2)
+MEMORY  (14:44:22:643 |    0)  11595; AudioDeviceBuffer::SetRecordingSampleRate(fsHz=48000)
+MEMORY  (14:44:22:643 |    0)  11595; AudioDeviceBuffer::SetPlayoutSampleRate(fsHz=48000)
+MEMORY  (14:44:22:643 |    0)  11595; AudioDeviceBuffer::SetRecordingChannels(channels=1)
+MEMORY  (14:44:22:643 |    0)  11595; AudioDeviceBuffer::SetPlayoutChannels(channels=1)
+MEMORY  (14:44:22:643 |    0)  11595; Created
+MEMORY  (14:44:22:643 |    0)  11595; OutputMixer::Create(instanceId=2)
+MEMORY  (14:44:22:644 |    1)  11595; OutputMixer::OutputMixer() - ctor
+MEMORY  (14:44:22:644 |    0)  11595; ChEBaseImpl() - ctor
+MEMORY  (14:44:22:644 |    0)  11595; ChEAudioProcessingImpl::ChEAudioProcessingImpl() - ctor
+MEMORY  (14:44:22:644 |    0)  11595; ChECodecImpl() - ctor
+MEMORY  (14:44:22:644 |    0)  11595; ChEHardwareImpl() - ctor
+MEMORY  (14:44:22:644 |    0)  11595; ChENetworkImpl() - ctor
+MEMORY  (14:44:22:644 |    0)  11595; ChEVolumeControlImpl::ChEVolumeControlImpl() - ctor
+MEMORY  (14:44:22:644 |    0)  11595; VoEVideoSyncImpl::VoEVideoSyncImpl() - ctor
+APICALL (14:44:22:644 |    0)  11595; RegisterAudioEngineObserver(observer=0x2058050236)
+APICALL (14:44:22:644 |    0)  11595; Init()
+INFO    (14:44:22:644 |    0)  11595;   OS info: Android
+DEBUG   (14:44:22:644 |    0)  11595; get method id
+DEBUG   (14:44:22:644 |    0)  11595; construct object
+INFO    (14:44:22:645 |    1)  11595; [JNI] use native sampling rate : 44100
+INFO    (14:44:22:648 |    3)  11596; Thread with name:jni_audio_capture_thread started 
+INFO    (14:44:22:648 |    0)  11595; [JNI] playback device is set to 0
+INFO    (14:44:22:648 |    0)  11595; [JNI] recording device is set to 0
+INFO    (14:44:22:648 |    0)  11595; Set stereo playback available = 0
+INFO    (14:44:22:648 |    0)  11595; StereoPlayoutIsAvailable(), output: available=0
+MEMORY  (14:44:22:648 |    0)  11595; AudioDeviceBuffer::SetPlayoutChannels(channels=1)
+INFO    (14:44:22:648 |    0)  11597; Thread with name:jni_audio_render_thread started 
+INFO    (14:44:22:648 |    0)  11595; StereoRecordingIsAvailable(), output: available=0
+MEMORY  (14:44:22:648 |    0)  11595; AudioDeviceBuffer::SetRecordingChannels(channels=1)
+DEBUG   (14:44:22:648 |    0)  11595; RegisterVADCallback()
+APICALL (14:44:22:648 |    4)  11595; EnableNearEndMusicDetection enable = 1
+INFO    (14:44:22:648 |    0)  11595; setMuteStatus, muted: Off
+APICALL (14:44:22:648 |    0)  11595; SetNearendPitchSmootherStatus()
+APICALL (14:44:22:648 |    0)  11595; SetNearendTransSuppStatus()
+APICALL (14:44:22:648 |    0)  11595; SetNearendIntelligibilityStatus() = 0
+INFO    (14:44:22:648 |    0)  11598; Thread with name:EngineMonitorThread started 
+APICALL (14:44:22:648 |    0)  11595; SetMuteOutput(mute=0)
+INFO    (14:44:22:648 |    0)  11595; setMuteOutput, muted: false
+APICALL (14:44:22:648 |    0)  11595; SetMicrophoneMute()
+WARN    (14:44:22:648 |    0)  11595;   API call not supported on this platform
+APICALL (14:44:22:648 |    0)  11595; SetSpeakerMute()
+WARN    (14:44:22:648 |    0)  11595;   API call not supported on this platform
+APICALL (14:44:22:649 |    1)  11595; setMicSensitivity, Gain = -2 dB
+WARN    (14:44:22:649 |    1)  11595; setMicSensitivity failed, legal values are between [0, 10]
+INFO    (14:44:22:649 |    0)  11595; Audio Engine Init success
+DEBUG   (14:44:22:649 |    0)  11595; async_queue created: 0x7aa79f28
+INFO    (14:44:22:649 |    0)  11595; [che] chat engine initialized
+DEBUG   (14:44:22:649 |    0)  11595; [tactics]: onJoinChannel version:2000-0101 dualLinkd:0 good:0 poor:0 chanMode:0 fps:15 resolution:640X360 videoMaxBitRate:400 localDevice:0 peerDevice:0 localNetType:WIFI
+INFO    (14:44:22:649 |    0)  11595; [tactics] version:2.0.0 maxBitrate:400 640X360 15 fps needHandle:1
+INFO    (14:44:22:649 |    0)  11595; [tactics] config json version:20150101-0000 duallinkd:true poor:u
+INFO    (14:44:22:649 |    0)  11595; [tactics] parse config for beckon error for tactics size:15
+INFO    (14:44:22:650 |    1)  11595; [vocs] vocs initialized
+DEBUG   (14:44:22:651 |    1)  11595; [ep] A/recoding unknown A/playout unknown S/CPU unknown S/throughput unknown
+INFO    (14:44:22:652 |    1)  11595; CacheManager: save cache to storage elapsed 0
+INFO    (14:44:22:652 |    0)  11595; [cm] emit join channel signal, size=3
+INFO    (14:44:22:652 |    0)  11595; [rs] report server ip: 221.228.78.123:8000
+INFO    (14:44:22:652 |    0)  11595; [rlbs] selected: 221.228.78.123:9700
+INFO    (14:44:22:652 |    0)  11595; [rlbs] request rs list from 221.228.78.123:9700.......
+DEBUG   (14:44:22:653 |    1)  11595; [rs] start to send cached report, items count: 0
+DEBUG   (14:44:22:653 |    0)  11595; [tactics]: onJoinChannel version:20150101-0000 dualLinkd:1 good:20 poor:30 chanMode:0 fps:15 resolution:640X360 videoMaxBitRate:400 localDevice:0 peerDevice:0 localNetType:WIFI
+INFO    (14:44:22:653 |    0)  11595; [tactics] version:2.0.0 maxBitrate:400 640X360 15 fps needHandle:1
+INFO    (14:44:22:653 |    0)  11595; [vocs] lookup channel...
+INFO    (14:44:22:653 |    0)  11595; [vocs] selected: 123.155.153.69:8000
+INFO    (14:44:22:654 |    1)  11595; connecting to 123.155.153.69:8000 handle 78f00498, 135
+INFO    (14:44:22:654 |    0)  11595; [vocs] creating channel with 123.155.153.69:8000, ts 1511851462654.......
+INFO    (14:44:22:654 |    0)  11595; [vocs] selected: 183.236.26.162:8000
+INFO    (14:44:22:654 |    0)  11595; [vocs] creating channel with 183.236.26.162:8000, ts 1511851462654.......
+INFO    (14:44:22:654 |    0)  11595; [vocs] selected: 119.9.92.49:8000
+INFO    (14:44:22:654 |    0)  11595; [vocs] creating channel with 119.9.92.49:8000, ts 1511851462654.......
+DEBUG   (14:44:22:654 |    0)  11595; api call executed: rtc.api.join_channel err 0
+DEBUG   (14:44:22:657 |    3)  11532; [AudioRoute] StopState: onEvent: 20, info: 1
+DEBUG   (14:44:22:658 |    1)  11532; [AudioRoute] StopState: onEvent: 11, info: 0
+INFO    (14:44:22:659 |    1)  11595; [rp] {"che.audio.output.routing":1}
+APICALL (14:44:22:659 |   10)  11595; SetAPMMagicIDRouting(magic_id = 96, routing = 1)
+APICALL (14:44:22:659 |    0)  11595; GetAgcConfig(config=?)
+APICALL (14:44:22:659 |    0)  11595; SetEcStatus(enable=1, mode=3)
+APICALL (14:44:22:659 |    0)  11595; SetEcMetricsStatus(enable=1)
+APICALL (14:44:22:659 |    0)  11595; SetDelayOffsetMs(offset = 200)
+APICALL (14:44:22:659 |    0)  11595; EnableAutoDelayOffset(enable = 1)
+APICALL (14:44:22:659 |    0)  11595; SetNsStatus(enable=1, mode=5)
+APICALL (14:44:22:659 |    0)  11595; SetAgcStatus(enable=1, mode=3)
+APICALL (14:44:22:659 |    0)  11595; SetAgcConfig()
+APICALL (14:44:22:659 |    0)  11595; SetDualChannelProcessing(enabled=0)
+APICALL (14:44:22:659 |    0)  11595; SetBssStatus(enable=0)
+INFO    (14:44:22:660 |    1)  11595; SetHowlingControl enable = 0
+APICALL (14:44:22:660 |    1)  11595; EnableNearEndMusicDetection enable = 1
+APICALL (14:44:22:660 |    0)  11595; SetNearendPitchSmootherStatus()
+INFO    (14:44:22:660 |    0)  11595; Application Config module:  Route 1, NS on, AEC C, AGC on, BSS off, HC on
+INFO    (14:44:22:660 |    0)  11595; MID = 96, Routing = 1
+DEBUG   (14:44:22:660 |    0)  11595; api call executed: che.audio.output.routing err 0
+INFO    (14:44:22:683 |   23)  11595; [rlbs/u] responsed from 221.228.78.123:9700 with servers 112.90.208.173:8000
+INFO    (14:44:22:696 |   13)  11595; [vocs/u] **responsed from 123.155.153.69:8000, 3 vos, elapsed 54, server ts 1511851447384, wan ip 210.22.82.242
+INFO    (14:44:22:697 |    1)  11595; [vos] added server: 110.53.183.246:4008
+INFO    (14:44:22:697 |    0)  11595; [vos] added server: 101.69.223.3:4008
+INFO    (14:44:22:697 |    0)  11595; [vos] added server: 101.69.223.6:4005
+INFO    (14:44:22:697 |    0)  11595; [ch0] vos initialized
+INFO    (14:44:22:697 |    0)  11595; [vos] selected: 101.69.223.6:4005
+INFO    (14:44:22:697 |    0)  11595; [ds]: ver 1 ds '{"streamType":1,"clientRole":1}'
+INFO    (14:44:22:697 |    0)  11595; [ch0] Login VOS (proto:9, cid:1343759702, uid:2928948059, ts:1511851462697, ticket size:72 ds:1 stream:+A-V) 2: 101.69.223.6:4005
+INFO    (14:44:22:697 |    0)  11595; add ping address 210.22.82.242
+INFO    (14:44:22:698 |    1)  11595; PING 210.22.82.242:0 16(44) bytes of data
+INFO    (14:44:22:707 |    9)  11595; [vocs/u] **responsed from 183.236.26.162:8000, 3 vos, elapsed 64, server ts 1511851447319, wan ip 210.22.82.242
+INFO    (14:44:22:711 |    4)  11595; [vocs/u] **responsed from 119.9.92.49:8000, 3 vos, elapsed 69, server ts 1511851447389, wan ip 210.22.82.242
+INFO    (14:44:22:739 |   28)  11595; [ch0] **VOS response to login request (res 0 elapsed 97, server ts 1511851447459, s-c:-15280) from 101.69.223.6:4005
+INFO    (14:44:22:740 |    1)  11595; [vocs] selected: 69.28.51.138:8000
+INFO    (14:44:22:740 |    0)  11595; connecting to 69.28.51.138:8000 handle 7aa7d470, 69
+INFO    (14:44:22:740 |    0)  11595; [vocs] login with multi ip {"vocs_ip":["210.22.82.242"],"vos_ip":["123.155.153.87"]}
+INFO    (14:44:22:740 |    0)  11595; [vocs] creating channel with 69.28.51.138:8000, ts 1511851462740.......
+INFO    (14:44:22:740 |    0)  11595; [vocs] selected: 123.155.153.69:8000
+INFO    (14:44:22:740 |    0)  11595; [vocs] login with multi ip {"vocs_ip":["210.22.82.242"],"vos_ip":["123.155.153.87"]}
+INFO    (14:44:22:740 |    0)  11595; [vocs] creating channel with 123.155.153.69:8000, ts 1511851462740.......
+INFO    (14:44:22:740 |    0)  11595; [vocs] selected: 119.9.92.49:8000
+INFO    (14:44:22:740 |    0)  11595; [vocs] login with multi ip {"vocs_ip":["210.22.82.242"],"vos_ip":["123.155.153.87"]}
+INFO    (14:44:22:741 |    1)  11595; [vocs] creating channel with 119.9.92.49:8000, ts 1511851462740.......
+INFO    (14:44:22:761 |   20)  11595; [vocs/u] **responsed from 123.155.153.69:8000, 3 vos, elapsed 119, server ts 1511851447457, wan ip 210.22.82.240
+INFO    (14:44:22:762 |    1)  11595; [vos] added server: 110.53.183.243:4001
+INFO    (14:44:22:762 |    0)  11595; [vos] added server: 101.69.223.5:4005
+INFO    (14:44:22:762 |    0)  11595; [vos] added server: 101.69.223.6:4005
+INFO    (14:44:22:762 |    0)  11595; [vos] selected: 101.69.223.6:4005
+INFO    (14:44:22:762 |    0)  11595; [ds]: ver 1 ds '{"streamType":1,"clientRole":1}'
+INFO    (14:44:22:762 |    0)  11595; [ch0] Login VOS (proto:9, cid:1343759702, uid:2928948059, ts:1511851462762, ticket size:72 ds:1 stream:+A-V) 2: 101.69.223.6:4005
+INFO    (14:44:22:762 |    0)  11595; add ping address 210.22.82.240
+INFO    (14:44:22:762 |    0)  11595; PING 210.22.82.240:0 16(44) bytes of data
+INFO    (14:44:22:794 |   32)  11595; [ch0] **VOS response to login request (res 0 elapsed 152, server ts 1511851447523, s-c:-15271) from 101.69.223.6:4005
+INFO    (14:44:22:795 |    1)  11595; updateActiveVosList: ["101.69.223.6:4005"]
+DEBUG   (14:44:22:795 |    0)  11595; [che] isCalling res:false****
+INFO    (14:44:22:795 |    0)  11595; [che] start call begins
+INFO    (14:44:22:795 |    0)  11595; Set Application Mode in RTC Engine to No. 4
+INFO    (14:44:22:795 |    0)  11595; Set Application Mode details solo 1, extend 0, audience 0, br 128000, streamType 1
+APICALL (14:44:22:795 |  135)  11595; GetCodec(index=0, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=1, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=2, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=3, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=4, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=5, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=6, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=7, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=8, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=9, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=10, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=11, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=12, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=13, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=14, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=15, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=16, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=17, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=18, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=0, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=1, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=2, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=3, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=4, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=5, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=6, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=7, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=8, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=9, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=10, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=11, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=12, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=13, codec=?)
+DEBUG   (14:44:22:795 |    0)  11594; [AudioRoute] sendEvent: [21], extra arg: 20... Handler (io.agora.rtc.internal.AudioRoutingController$EventHandler) {42715128}
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=14, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=15, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=16, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=17, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=0, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=1, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=2, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=3, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=4, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=5, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=6, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=7, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=8, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=0, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=1, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=2, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=3, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=4, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=5, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=6, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=7, codec=?)
+DEBUG   (14:44:22:795 |    0)  11532; [AudioRoute] StopState: onEvent: 21, info: 20
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=8, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=9, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=0, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=1, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=2, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=3, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=4, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=5, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=6, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=7, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=8, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=9, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=10, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=0, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=1, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=2, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=3, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=4, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=5, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=6, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=7, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=8, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=9, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=10, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=11, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=12, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=13, codec=?)
+APICALL (14:44:22:795 |    0)  11595; GetCodec(index=14, codec=?)
+APICALL (14:44:22:796 |    1)  11595; GetCodec(index=15, codec=?)
+APICALL (14:44:22:796 |    0)  11595; GetCodec(index=16, codec=?)
+APICALL (14:44:22:796 |    0)  11595; GetCodec(index=17, codec=?)
+APICALL (14:44:22:796 |    0)  11595; GetCodec(index=18, codec=?)
+APICALL (14:44:22:796 |    0)  11595; GetCodec(index=19, codec=?)
+APICALL (14:44:22:796 |    0)  11595; GetCodec(index=20, codec=?)
+APICALL (14:44:22:796 |    0)  11595; GetCodec(index=21, codec=?)
+APICALL (14:44:22:796 |    0)  11595; GetCodec(index=22, codec=?)
+APICALL (14:44:22:796 |    0)  11595; GetCodec(index=23, codec=?)
+APICALL (14:44:22:796 |    0)  11595; GetCodec(index=23, codec=?)
+INFO    (14:44:22:796 |    1)  11595; SetCodec by type : No. 77
+APICALL (14:44:22:796 |    0)  11595; SetSendCodec(codec)
+INFO    (14:44:22:798 |    2)  11595; Setting dtx mode to 0
+APICALL (14:44:22:798 |    2)  11595; SetVADStatus(enable=0, mode=2, disableDTX=1)
+APICALL (14:44:22:798 |    0)  11595; SetDtxMode(mode=0)
+APICALL (14:44:22:798 |    0)  11595; SetDtxMode(mode=0)
+APICALL (14:44:22:798 |    0)  11595; SetRecordingDevice(index=1, recordingChannel=2)
+WARN    (14:44:22:798 |    0)  11595; SetRecordingChannel() unable to set the recording channel (error=10028)
+INFO    (14:44:22:798 |    0)  11595; [JNI] recording device is set to 1
+INFO    (14:44:22:798 |    0)  11595; StereoRecordingIsAvailable(), output: available=0
+INFO    (14:44:22:798 |    0)  11595; SetRecordingDevicePart2:SetStereoRecording, stereo recording=0
+MEMORY  (14:44:22:798 |    0)  11595; AudioDeviceBuffer::SetRecordingChannels(channels=1)
+APICALL (14:44:22:798 |    0)  11595; SetAudioMode
+INFO    (14:44:22:798 |    0)  11595; [JNI] audioMode is set to 0
+APICALL (14:44:22:800 |    2)  11595; GetCodec(index=23, codec=?)
+APICALL (14:44:22:800 |    0)  11595; SetSendCodec(codec)
+APICALL (14:44:22:800 |    0)  11595; StartReceive
+APICALL (14:44:22:800 |    0)  11595; StartPlayout
+MEMORY  (14:44:22:800 |    2)  11595; InitPlayout
+DEBUG   (14:44:22:801 |    1)  11595; [AudioDevice Java] Java minimum playback buffer size is 4096, profiledMiniOutBufferSize is 0
+DEBUG   (14:44:22:802 |    1)  11595; [AudioDevice Java] Java playback buffer size is 8192, duration is 93 ms
+DEBUG   (14:44:22:803 |    1)  11595; [AudioDevice Java] Java play sample rate is set to 44100
+INFO    (14:44:22:803 |    0)  11595; [JNI] playback sample rate is set to (44100)
+MEMORY  (14:44:22:803 |    0)  11595; AudioDeviceBuffer::SetPlayoutSampleRate(fsHz=44100)
+DEBUG   (14:44:22:804 |    1)  11597; Playout thread event signal
+DEBUG   (14:44:22:804 |    0)  11597; Sent signal
+INFO    (14:44:22:805 |    1)  11595; StartPlayout complete
+APICALL (14:44:22:805 |    5)  11595; StartSend
+INFO    (14:44:22:805 |    0)  11595; output: NOT_SUPPORTED
+MEMORY  (14:44:22:805 |    0)  11595; InitRecording
+INFO    (14:44:22:805 |    0)  11595; [JNI] use native sampling rate : 44100
+DEBUG   (14:44:22:805 |    0)  11595; [AudioDevice Java] Java minimum recording buffer size is 2048
+DEBUG   (14:44:22:827 |   22)  11595; [AudioDevice Java] Java recording sample rate set to 44100
+DEBUG   (14:44:22:834 |    7)  11595; [AudioDevice Java] AcousticEchoCanceler.isAvailable: true
+DEBUG   (14:44:22:837 |    3)  11595; [AudioDevice Java] AcousticEchoCanceler name: Acoustic Echo Canceler, implementor: The Android Open Source Project, uuid: bb392ec0-8d4d-11e0-a896-0002a5d5c51b
+ERROR   (14:44:22:837 |    0)  11595; [AudioDevice Java] AcousticEchoCanceler.getEnabled: false
+INFO    (14:44:22:837 |    0)  11595; [JNI] recording sample rate is set to (44100)
+MEMORY  (14:44:22:837 |    0)  11595; AudioDeviceBuffer::SetRecordingSampleRate(fsHz=44100)
+DEBUG   (14:44:22:845 |    8)  11596; Recording thread event signal
+INFO    (14:44:22:845 |    0)  11595; StartRecording complete
+APICALL (14:44:22:847 |   42)  11595; QueryLoudspeakerStatus(route=1)
+APICALL (14:44:22:847 |    0)  11595; SetAPMMagicIDRouting(magic_id = 96, routing = 1)
+APICALL (14:44:22:847 |    0)  11595; SetEcStatus(enable=0, mode=0)
+APICALL (14:44:22:847 |    0)  11595; SetEcStatus(enable=0, mode=0)
+APICALL (14:44:22:847 |    0)  11595; SetNsStatus(enable=0, mode=5)
+APICALL (14:44:22:847 |    0)  11595; SetAgcStatus(enable=0, mode=3)
+APICALL (14:44:22:847 |    0)  11595; SetAgcConfig()
+APICALL (14:44:22:847 |    0)  11595; SetDualChannelProcessing(enabled=0)
+APICALL (14:44:22:847 |    0)  11595; SetBssStatus(enable=0)
+APICALL (14:44:22:847 |    0)  11595; EnableNearEndMusicDetection enable = 0
+APICALL (14:44:22:847 |    0)  11595; SetNearendPitchSmootherStatus()
+INFO    (14:44:22:847 |    2)  11595; Application Config module:  Route 1, NS off, AEC N, AGC off, BSS off, HC off
+INFO    (14:44:22:847 |    0)  11595; MID = 96, Routing = 1
+INFO    (14:44:22:847 |    0)  11595; [che] start call returns 0, elapsed 53
+INFO    (14:44:22:847 |    0)  11595; Setting dtx mode to 0
+APICALL (14:44:22:847 |    0)  11595; SetVADStatus(enable=0, mode=2, disableDTX=1)
+APICALL (14:44:22:847 |    0)  11595; SetDtxMode(mode=0)
+APICALL (14:44:22:847 |    0)  11595; SetDtxMode(mode=0)
+INFO    (14:44:22:847 |    0)  11595; setNetEQMinimumPlayoutDelay delay(100)
+APICALL (14:44:22:847 |    0)  11595; SetNetEQMinimumPlayoutDelay(delay=100 ms)
+INFO    (14:44:22:847 |    0)  11595; join channel success: cname 'yy' uid 2928948059 elapsed 205
+DEBUG   (14:44:22:847 |    0)  11595; [ch0] ping1 (cid:1343759702, uid:2928948059, sync:1): 101.69.223.6:4005
+DEBUG   (14:44:22:847 |    0)  11595; [ch1343759702] usersStreamInfoReq (cid:2928948059, uid:1912430723)
+INFO    (14:44:22:849 |    2)  11594; [AudioRoute] reset audio routing, default routing: Speakerphone, current routing: Default, target routing: Earpiece, actual system routing: Earpiece
+INFO    (14:44:22:849 |    0)  11594; [AudioRoute] set audio output routing from Default to Earpiece
+DEBUG   (14:44:22:851 |    2)  11594; [AudioRoute] updateBluetoothSco sco started: false, audio route target: 1[Earpiece] current: -1[Default], engine role: 20
+INFO    (14:44:22:851 |    0)  11594; [AudioRoute] audio routing changed to Earpiece
+INFO    (14:44:22:851 |    0)  11595; [rp] {"che.audio.output.routing":1}
+INFO    (14:44:22:851 |    0)  11594; [AudioRoute] Monitor start: default routing: Speakerphone, current routing: Earpiece
+APICALL (14:44:22:851 |    4)  11595; SetAPMMagicIDRouting(magic_id = 96, routing = 1)
+APICALL (14:44:22:851 |    0)  11595; SetEcStatus(enable=0, mode=0)
+APICALL (14:44:22:851 |    0)  11595; SetEcStatus(enable=0, mode=0)
+APICALL (14:44:22:851 |    0)  11595; SetNsStatus(enable=0, mode=5)
+APICALL (14:44:22:851 |    0)  11595; SetAgcStatus(enable=0, mode=3)
+APICALL (14:44:22:851 |    0)  11595; SetAgcConfig()
+ERROR   (14:44:22:851 |    0)  11595; SetAgcConfig() failed to set hard limiter to the signal (error=8097)
+APICALL (14:44:22:851 |    0)  11595; SetDualChannelProcessing(enabled=0)
+APICALL (14:44:22:851 |    0)  11595; SetBssStatus(enable=0)
+APICALL (14:44:22:851 |    0)  11595; EnableNearEndMusicDetection enable = 0
+APICALL (14:44:22:851 |    0)  11595; SetNearendPitchSmootherStatus()
+INFO    (14:44:22:851 |    0)  11595; Application Config module:  Route 1, NS off, AEC N, AGC off, BSS off, HC off
+INFO    (14:44:22:851 |    0)  11595; MID = 96, Routing = 1
+DEBUG   (14:44:22:851 |    0)  11595; api call executed: che.audio.output.routing err 0
+DEBUG   (14:44:22:865 |   14)  11595; [ch0] pong1 (cid:1343759702, uid:2928948059, sync:1): 101.69.223.6:4005
+DEBUG   (14:44:22:865 |    0)  11595; [ch0] ping2 (cid:1343759702, uid:2928948059): 101.69.223.6:4005
+INFO    (14:44:22:865 |    0)  11595; [ch0] rtt: 18
+DEBUG   (14:44:22:865 |    0)  11595; calc audio vos qos: -------
+DEBUG   (14:44:22:865 |    0)  11595; [ch0] to client: unknown 0/0, to vos: unknown 0/0
+DEBUG   (14:44:22:865 |    0)  11595; OnPong and lost tx: 0 rx:2029016504
+DEBUG   (14:44:22:865 |    0)  11595; calc video vos qos: -------
+DEBUG   (14:44:22:865 |    0)  11595; [ch0] to client: unknown 0/0, to vos: unknown 0/0
+DEBUG   (14:44:22:866 |    1)  11595; OnPong and lost tx: 0 rx:2029016504
+DEBUG   (14:44:22:866 |    0)  11595; calc a+v vos qos: -------
+DEBUG   (14:44:22:866 |    0)  11595; [ch0] to client: unknown 0/0, to vos: unknown 0/0
+DEBUG   (14:44:22:866 |    0)  11595; OnPong and lost tx: 0 rx:2029016504
+DEBUG   (14:44:22:866 |    0)  11595; updateUsersStreamInfo, {uid:2928948059,type:4}
+INFO    (14:44:22:922 |   56)  11595; [vocs/u] **responsed from 69.28.51.138:8000, 3 vos, elapsed 279, server ts 1511851447538, wan ip 210.22.82.240
+INFO    (14:44:22:922 |    0)  11595; [vos] added server: 112.90.208.164:4007
+INFO    (14:44:22:922 |    0)  11595; [vos] added server: 110.53.183.242:4005
+INFO    (14:44:22:922 |    0)  11595; [vos] added server: 101.69.223.8:4003
+INFO    (14:44:23: 44 |    0)  11595; onFirstLocalAudioFrame codec 77 elapsed 401
+DEBUG   (14:44:23:808 |  764)  11595; Paced sender video rexfer target bitrate 276.
+
+DEBUG   (14:44:23:995 |  187)  11595; [ch0] ping1 (cid:1343759702, uid:2928948059, sync:1): 101.69.223.6:4005
+DEBUG   (14:44:23:995 |    0)  11595; [ch1343759702] usersStreamInfoReq (cid:2928948059, uid:3060591570)
+DEBUG   (14:44:24: 12 |    0)  11595; [ch0] pong1 (cid:1343759702, uid:2928948059, sync:1): 101.69.223.6:4005
+DEBUG   (14:44:24: 12 |    0)  11595; [ch0] ping2 (cid:1343759702, uid:2928948059): 101.69.223.6:4005
+DEBUG   (14:44:24: 12 |    0)  11595; calc audio vos qos: -------
+DEBUG   (14:44:24: 12 |    0)  11595; [ch0] to client: unknown 0/0, to vos: unknown 32/32
+DEBUG   (14:44:24: 12 |    0)  11595; OnPong and lost tx: 0 rx:2029016504
+DEBUG   (14:44:24: 12 |    0)  11595; calc video vos qos: -------
+DEBUG   (14:44:24: 12 |    0)  11595; [ch0] to client: unknown 0/0, to vos: unknown 0/0
+DEBUG   (14:44:24: 12 |    0)  11595; OnPong and lost tx: 0 rx:2029016504
+DEBUG   (14:44:24: 12 |    0)  11595; calc a+v vos qos: -------
+DEBUG   (14:44:24: 12 |    0)  11595; [ch0] to client: unknown 0/0, to vos: unknown 32/32
+DEBUG   (14:44:24: 12 |    0)  11595; OnPong and lost tx: 0 rx:2029016504
+DEBUG   (14:44:24: 13 |    1)  11595; updateUsersStreamInfo, {uid:2928948059,type:5}
+DEBUG   (14:44:24:646 |  633)  11595; [ep] audio encoder/decoder 0/18 ms/50 frames
+DEBUG   (14:44:24:646 |    0)  11595; [ep] sdk audio tx/rx time 0/0 video tx/rx time 0/0 ms/50 frames, total 0 ms
+DEBUG   (14:44:24:646 |    0)  11595; [ep] pickup i/o 0/0 timer 0
+DEBUG   (14:44:24:646 |    0)  11595; start duration: 1 s, calc duration: 2000 ms, byte rate (kbps): tx=0, rx=0, total=0
+DEBUG   (14:44:24:646 |    0)  11595; [tactics] auido local uid(send) 2928948059 seq 0 codec:82 rPkCount 0 sPkCount 54 netType 2 poorDevice 0           PkLst 0 frameLst 0 rtt 0 jitter 0 FEC 1:0 maxLst 0 uQos 0 dQos 0 pk_length:70 cpu:0
+DEBUG   (14:44:24:646 |    0)  11595; [tactics] video local uid(send):2928948059 seq:0 uQos:0 dQos:0 sendPk:0 rtt:0 lost:0 bwe:0 kbps:0/0 fps:0/0           qp:0 decoded:0 failed:0 render:0 resolution:0X0 diff(a/v):232228298/232228298
+DEBUG   (14:44:24:808 |  162)  11595; Paced sender video rexfer target bitrate 234.
+
+ERROR   (14:44:24:814 |    6)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:24:814 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:24:814 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:24:835 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:24:835 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:24:857 |   22)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:24:857 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:24:878 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:24:878 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:24:878 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:24:879 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:24:879 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:24:899 |   20)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:24:899 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:24:963 |   64)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:24:963 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:24:963 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:24:984 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:24:985 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:  6 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:  6 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25: 27 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25: 27 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25: 28 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25: 49 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25: 49 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25: 70 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25: 70 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25: 91 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25: 91 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:113 |   22)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:113 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:113 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:134 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:134 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:155 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:155 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:177 |   22)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:177 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:177 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+DEBUG   (14:44:25:195 |   18)  11595; [ch0] ping1 (cid:1343759702, uid:2928948059, sync:1): 101.69.223.6:4005
+DEBUG   (14:44:25:195 |    0)  11595; [ch1343759702] usersStreamInfoReq (cid:2928948059, uid:4260101416)
+ERROR   (14:44:25:199 |    4)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:199 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+DEBUG   (14:44:25:212 |   13)  11595; [ch0] pong1 (cid:1343759702, uid:2928948059, sync:1): 101.69.223.6:4005
+DEBUG   (14:44:25:212 |    0)  11595; [ch0] ping2 (cid:1343759702, uid:2928948059): 101.69.223.6:4005
+DEBUG   (14:44:25:212 |    0)  11595; calc audio vos qos: -------
+DEBUG   (14:44:25:212 |    0)  11595; [ch0] to client: unknown 0/0, to vos: unknown 59/59
+DEBUG   (14:44:25:212 |    0)  11595; OnPong and lost tx: 0 rx:2029016504
+DEBUG   (14:44:25:212 |    0)  11595; calc video vos qos: -------
+DEBUG   (14:44:25:212 |    0)  11595; [ch0] to client: unknown 0/0, to vos: unknown 0/0
+DEBUG   (14:44:25:212 |    0)  11595; OnPong and lost tx: 0 rx:2029016504
+DEBUG   (14:44:25:212 |    0)  11595; calc a+v vos qos: -------
+DEBUG   (14:44:25:212 |    0)  11595; [ch0] to client: unknown 0/0, to vos: unknown 59/59
+DEBUG   (14:44:25:212 |    0)  11595; OnPong and lost tx: 0 rx:2029016504
+DEBUG   (14:44:25:213 |    1)  11595; updateUsersStreamInfo, {uid:2928948059,type:1}
+ERROR   (14:44:25:219 |    6)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:219 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:262 |   43)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:262 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:262 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:283 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:283 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:305 |   22)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:305 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:326 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:326 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:326 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:347 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:347 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:369 |   22)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:369 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:390 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:390 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:390 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:411 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:411 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:433 |   22)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:433 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:475 |   42)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:475 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:475 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:496 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:497 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:518 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:518 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:519 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:519 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:519 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:539 |   20)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:539 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:582 |   43)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:582 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:603 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:603 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:604 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:625 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:625 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:646 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:646 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:667 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:668 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:668 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:689 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:689 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:710 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:710 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+DEBUG   (14:44:25:740 |   30)  11595; [vocs] job done, timer canceled
+ERROR   (14:44:25:752 |   12)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:753 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:774 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:774 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:774 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:795 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:795 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:817 |   22)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:817 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+DEBUG   (14:44:25:828 |   11)  11595; Paced sender video rexfer target bitrate 199.
+
+ERROR   (14:44:25:838 |   10)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:839 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:839 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:840 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:840 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:859 |   19)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:859 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:902 |   43)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:902 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:902 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:923 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:924 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:945 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:945 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:966 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:966 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:25:966 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:  8 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:  9 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26: 30 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26: 30 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26: 51 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26: 51 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26: 52 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26: 73 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26: 73 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26: 95 |   22)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26: 95 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:115 |   20)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:116 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:116 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:137 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:137 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:158 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:158 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:159 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:160 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:160 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:180 |   20)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:180 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:222 |   42)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:222 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:265 |   43)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:265 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:265 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:286 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:286 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:307 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:308 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:329 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:329 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:329 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:350 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:350 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:371 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:372 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:393 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:393 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:393 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+DEBUG   (14:44:26:395 |    2)  11595; [ch0] ping1 (cid:1343759702, uid:2928948059, sync:1): 101.69.223.6:4005
+DEBUG   (14:44:26:395 |    0)  11595; [ch1343759702] usersStreamInfoReq (cid:2928948059, uid:1164901428)
+DEBUG   (14:44:26:411 |   16)  11595; [ch0] pong1 (cid:1343759702, uid:2928948059, sync:1): 101.69.223.6:4005
+DEBUG   (14:44:26:411 |    0)  11595; [ch0] ping2 (cid:1343759702, uid:2928948059): 101.69.223.6:4005
+DEBUG   (14:44:26:412 |    1)  11595; calc audio vos qos: -------
+DEBUG   (14:44:26:412 |    0)  11595; [ch0] to client: unknown 0/0, to vos: unknown 59/59
+DEBUG   (14:44:26:412 |    0)  11595; OnPong and lost tx: 0 rx:2029016504
+DEBUG   (14:44:26:412 |    0)  11595; calc video vos qos: -------
+DEBUG   (14:44:26:412 |    0)  11595; [ch0] to client: unknown 0/0, to vos: unknown 0/0
+DEBUG   (14:44:26:412 |    0)  11595; OnPong and lost tx: 0 rx:2029016504
+DEBUG   (14:44:26:412 |    0)  11595; calc a+v vos qos: -------
+DEBUG   (14:44:26:412 |    0)  11595; [ch0] to client: unknown 0/0, to vos: unknown 59/59
+DEBUG   (14:44:26:412 |    0)  11595; OnPong and lost tx: 0 rx:2029016504
+DEBUG   (14:44:26:412 |    0)  11595; updateUsersStreamInfo, {uid:2928948059,type:1}
+ERROR   (14:44:26:414 |    2)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:414 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:435 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:436 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:457 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:457 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:479 |   22)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:479 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:479 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:479 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:479 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:542 |   63)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:542 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:563 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:563 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:563 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:584 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:585 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+DEBUG   (14:44:26:590 |    5)  11532; [AudioRoute] cancel bluetooth timer
+INFO    (14:44:26:590 |    0)  11532; [AudioRoute] Monitor stopped
+INFO    (14:44:26:590 |    0)  11532; API call to leave channel
+INFO    (14:44:26:591 |    1)  11595; [cm] emit leave channel signal
+INFO    (14:44:26:593 |    2)  11532; Detach external video source from pipeline
+DEBUG   (14:44:26:593 |    0)  11532; [AudioRoute] uninitialize
+INFO    (14:44:26:594 |    1)  11532; android destroy
+ERROR   (14:44:26:608 |   14)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:608 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:627 |   19)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:628 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:628 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:649 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:649 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:670 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:670 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:691 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:691 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:692 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:713 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:713 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:734 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:734 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:755 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:756 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:756 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:798 |   42)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:798 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:799 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:799 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:819 |   20)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:819 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:820 |    1)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:862 |   42)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:862 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:884 |   22)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:884 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:905 |   21)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:905 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+ERROR   (14:44:26:905 |    0)  11596; CaptureRaw ProcessRawAudioData err2, useMode = 2 err = 1
+INFO    (14:44:26:911 |    6)  11595; [che] stopCall begins
+APICALL (14:44:26:911 |   60)  11595; StopDebugRecording()
+APICALL (14:44:26:911 |    0)  11595; StopSend
+INFO    (14:44:26:977 |   66)  11595; StopRecording complete
+APICALL (14:44:26:978 |   67)  11595; StopListen
+APICALL (14:44:26:978 |    0)  11595; StopPlayout
+INFO    (14:44:27: 23 |    0)  11595; StopPlayout complete
+APICALL (14:44:27: 23 |    0)  11595; SetAudioMode
+INFO    (14:44:27: 23 |    0)  11595; [JNI] audioMode is set to 0
+INFO    (14:44:27: 25 |    2)  11595; [che] stop call returns 0, elapsed 113
+INFO    (14:44:27: 25 |    0)  11595; [rs] **report stats: seq: 8, report list size 8, tx/rx: 1381/336, cache size: 0, report success rate: -1
+DEBUG   (14:44:27: 27 |    2)  11595; [ep] audio encoder/decoder 0/300 ms/50 frames
+DEBUG   (14:44:27: 27 |    0)  11595; [ep] sdk audio tx/rx time 0/0 video tx/rx time 0/0 ms/50 frames, total 0 ms
+DEBUG   (14:44:27: 27 |    0)  11595; [ep] pickup i/o 43/5 timer 383
+DEBUG   (14:44:27: 27 |    0)  11595; [ep] A/recoding bad A/playout excellent S/CPU unknown S/throughput bad
+DEBUG   (14:44:27: 27 |    0)  11595; start duration: 4 s, calc duration: 2383 ms, byte rate (kbps): tx=58, rx=10, total=68
+DEBUG   (14:44:27: 27 |    0)  11595; Remove a deprecated quality
+DEBUG   (14:44:27: 27 |    0)  11595; Remove a deprecated quality
+DEBUG   (14:44:27: 27 |    0)  11595; Remove a deprecated quality
+DEBUG   (14:44:27: 27 |    0)  11595; Remove a deprecated quality
+DEBUG   (14:44:27: 27 |    0)  11595; Remove a deprecated quality
+DEBUG   (14:44:27: 27 |    0)  11595; Remove a deprecated quality
+DEBUG   (14:44:27: 27 |    0)  11595; Remove a deprecated quality
+DEBUG   (14:44:27: 27 |    0)  11595; Remove a deprecated quality
+DEBUG   (14:44:27: 27 |    0)  11595; Remove a deprecated quality
+DEBUG   (14:44:27: 27 |    0)  11595; Remove a deprecated quality
+DEBUG   (14:44:27: 27 |    0)  11595; Remove a deprecated quality
+DEBUG   (14:44:27: 27 |    0)  11595; Remove a deprecated quality
+DEBUG   (14:44:27: 27 |    0)  11595; Remove a deprecated quality
+DEBUG   (14:44:27: 28 |    1)  11595; Remove a deprecated quality
+DEBUG   (14:44:27: 28 |    0)  11595; Remove a deprecated quality
+DEBUG   (14:44:27: 28 |    0)  11595; Remove a deprecated quality
+DEBUG   (14:44:27: 28 |    0)  11595; update video to client qos: -------
+DEBUG   (14:44:27: 28 |    0)  11595; Averaged 0 quality packages, lost: 0 (0/0)
+DEBUG   (14:44:27: 28 |    0)  11595; update video to vos qos: -------
+DEBUG   (14:44:27: 28 |    0)  11595; Averaged 0 quality packages, lost: 0 (0/0)
+DEBUG   (14:44:27: 28 |    0)  11595; update audio to client qos: -------
+DEBUG   (14:44:27: 28 |    0)  11595; Averaged 0 quality packages, lost: 0 (0/0)
+DEBUG   (14:44:27: 28 |    0)  11595; update audio to vos qos: -------
+DEBUG   (14:44:27: 28 |    0)  11595; Averaged 0 quality packages, lost: 0 (0/0)
+DEBUG   (14:44:27: 28 |    0)  11595; priority: 0, id: 25, index: 43, value: 0
+DEBUG   (14:44:27: 28 |    0)  11595; priority: 0, id: 36, index: 62, value: 58
+DEBUG   (14:44:27: 28 |    0)  11595; priority: 0, id: 37, index: 63, value: 10
+DEBUG   (14:44:27: 28 |    0)  11595; priority: 0, id: 147, index: 8, value: 0
+DEBUG   (14:44:27: 28 |    0)  11595; priority: 0, id: 148, index: 11, value: 0
+DEBUG   (14:44:27: 28 |    0)  11595; priority: 0, id: 184, index: 120, value: 0
+DEBUG   (14:44:27: 28 |    0)  11595; priority: 0, id: 185, index: 121, value: 0
+DEBUG   (14:44:27: 28 |    0)  11595; priority: 5, id: 12, index: 15, value: 37
+DEBUG   (14:44:27: 29 |    1)  11595; priority: 5, id: 13, index: 16, value: 88
+DEBUG   (14:44:27: 29 |    0)  11595; priority: 5, id: 14, index: 17, value: 1
+DEBUG   (14:44:27: 29 |    0)  11595; priority: 5, id: 15, index: 18, value: 1
+DEBUG   (14:44:27: 29 |    0)  11595; priority: 5, id: 18, index: 39, value: 1032
+DEBUG   (14:44:27: 29 |    0)  11595; priority: 5, id: 19, index: 20, value: 32
+DEBUG   (14:44:27: 29 |    0)  11595; priority: 5, id: 20, index: 21, value: 0
+DEBUG   (14:44:27: 29 |    0)  11595; priority: 5, id: 187, index: 9, value: 0
+DEBUG   (14:44:27: 29 |    0)  11595; priority: 5, id: 188, index: 10, value: 0
+DEBUG   (14:44:27: 29 |    0)  11595; priority: 10, id: 4, index: 3, value: 193
+DEBUG   (14:44:27: 29 |    0)  11595; priority: 10, id: 21, index: 22, value: 77
+DEBUG   (14:44:27: 29 |    0)  11595; priority: 10, id: 26, index: 44, value: 0
+DEBUG   (14:44:27: 29 |    0)  11595; priority: 10, id: 27, index: 45, value: 0
+DEBUG   (14:44:27: 29 |    0)  11595; priority: 10, id: 45, index: 74, value: 0
+DEBUG   (14:44:27: 29 |    0)  11595; priority: 10, id: 49, index: 73, value: 0
+DEBUG   (14:44:27: 29 |    0)  11595; priority: 10, id: 171, index: 77, value: 0
+DEBUG   (14:44:27: 29 |    0)  11595; priority: 10, id: 62, index: 91, value: 0
+DEBUG   (14:44:27: 29 |    0)  11595; priority: 10, id: 101, index: 30, value: 0
+DEBUG   (14:44:27: 29 |    0)  11595; priority: 10, id: 119, index: 75, value: 0
+DEBUG   (14:44:27: 29 |    0)  11595; priority: 10, id: 120, index: 76, value: 0
+DEBUG   (14:44:27: 30 |    1)  11595; priority: 10, id: 134, index: 59, value: 1
+DEBUG   (14:44:27: 30 |    0)  11595; priority: 10, id: 144, index: 47, value: 8
+DEBUG   (14:44:27: 30 |    0)  11595; priority: 10, id: 145, index: 46, value: 50
+DEBUG   (14:44:27: 30 |    0)  11595; priority: 10, id: 146, index: 38, value: 0
+DEBUG   (14:44:27: 30 |    0)  11595; start duration: 4 s, calc duration: 2383 ms, byte rate (kbps): tx=8, rx=0, total=8
+INFO    (14:44:27: 31 |    1)  11595; **CALL STATS: duration 4s, tx 17.263K bytes, rx 3.177K bytes, total 20.440K bytes
+INFO    (14:44:27: 31 |    0)  11595; CacheManager: save cache to storage elapsed 0
+DEBUG   (14:44:27: 31 |    0)  11595; [tactics] NetObserver disconstructor........
+INFO    (14:44:27: 32 |    1)  11595; [ch0] vos destroyed
+INFO    (14:44:27: 32 |    0)  11595; delRef of media engine, ref=0
+INFO    (14:44:27: 32 |    0)  11595; [che] chat engine destroying
+INFO    (14:44:27: 32 |    0)  11595; [che] stopCall begins
+INFO    (14:44:27: 32 |    0)  11595; [che] stop call returns -1, elapsed 0
+APICALL (14:44:27: 32 |    9)  11595; Terminate()
+INFO    (14:44:27: 32 |    0)  11598; Thread with name:EngineMonitorThread stopped
+APICALL (14:44:27: 32 |    0)  11595; StopSend
+APICALL (14:44:27: 32 |    0)  11595; StopPlayout
+DEBUG   (14:44:27: 32 |    0)  11595; RegisterVADCallback()
+DEBUG   (14:44:27: 32 |    0)  11596; Recording thread event signal
+DEBUG   (14:44:27: 33 |    1)  11596; Detaching rec thread from Java VM
+DEBUG   (14:44:27: 33 |    0)  11596; Sent signal rec
+DEBUG   (14:44:27: 33 |    0)  11596; Recording thread event signal
+INFO    (14:44:27: 33 |    0)  11596; Thread with name:jni_audio_capture_thread stopped
+DEBUG   (14:44:27: 33 |    0)  11597; Playout thread event signal
+DEBUG   (14:44:27: 33 |    0)  11597; Detaching thread from Java VM
+DEBUG   (14:44:27: 33 |    0)  11597; Sent signal
+DEBUG   (14:44:27: 33 |    0)  11597; Playout thread event signal
+INFO    (14:44:27: 33 |    0)  11597; Thread with name:jni_audio_render_thread stopped
+APICALL (14:44:27: 44 |   12)  11595; AudioEngineImpl self deleting (audioEngine=0x0x7a9d6008)
+MEMORY  (14:44:27: 44 |   11)  11595; VoEVideoSyncImpl::~VoEVideoSyncImpl() - dtor
+MEMORY  (14:44:27: 44 |    0)  11595; ChEVolumeControlImpl::~ChEVolumeControlImpl() - dtor
+MEMORY  (14:44:27: 44 |    0)  11595; ~ChENetworkImpl() - dtor
+MEMORY  (14:44:27: 44 |    0)  11595; ~ChEHardwareImpl() - dtor
+MEMORY  (14:44:27: 44 |    0)  11595; ~ChECodecImpl() - dtor
+MEMORY  (14:44:27: 44 |    0)  11595; ChEAudioProcessingImpl::~ChEAudioProcessingImpl() - dtor
+MEMORY  (14:44:27: 44 |    0)  11595; ~ChEBaseImpl() - dtor
+MEMORY  (14:44:27: 44 |    0)  11595; OutputMixer::~OutputMixer() - dtor
+MEMORY  (14:44:27: 44 |    0)  11595; Destroyed
+MEMORY  (14:44:27: 44 |    0)  11595; ~AudioDeviceModuleImpl destroyed
+MEMORY  (14:44:27: 44 |    0)  11595; ~AudioDeviceAndroidJni destroyed
+MEMORY  (14:44:27: 44 |    0)  11595; ~AudioDeviceExternal destroyed
+MEMORY  (14:44:27: 44 |    0)  11595; ~AudioDeviceUtilityAndroid destroyed
+MEMORY  (14:44:27: 44 |    0)  11595; ~AudioDeviceBuffer destroyed
+MEMORY  (14:44:27: 44 |    0)  11595; ~ProcessThreadImpl deleted
+INFO    (14:44:27: 45 |    1)  11595; [che] chat engine destroyed
+INFO    (14:44:27: 45 |    0)  11595; ***CALL END
+INFO    (14:44:27: 45 |    0)  11595; onAudioStatusChanged enable audio
+DEBUG   (14:44:27: 45 |    0)  11595; api call executed: rtc.api.leave_channel err 0
+INFO    (14:44:27: 47 |    2)  11595; [rs] **report stats: seq: 9, report list size 9, tx/rx: 1656/336, cache size: 0, report success rate: -1
+DEBUG   (14:44:27: 47 |    0)  11595; api call executed: rtc.api.stop_engine err 0
+INFO    (14:44:27: 47 |    0)  11595; Agora Rtc Engine stopped
+INFO    (14:44:27:148 |  101)  11532; async task worker thread exited gracefully
+INFO    (14:44:27:148 |    0)  11532; CacheManager: save cache to storage elapsed 0
+INFO    (14:44:27:148 |    0)  11532; CacheManager: save report cache to storage elapsed 0

@@ -229,7 +229,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
     @Override
     public boolean onRecordFrame(byte[] bytes, int i, int i1, int i2, int i3) {
        // Log.e(TAG , Arrays.toString(bytes)) ;
-        return false;
+        return true;
     }
 
     @Override
@@ -246,7 +246,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return false;
+        return true;
     }
 
     private void dispatchWork() {
@@ -290,11 +290,15 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
         }
         Log.e(TAG , "onLeaveChannel") ;
         leaveChannel();
+        mRtcEngine.destroy();
     }
 
     private void doApp2App() {
         mTvInfoDisplay.append("enter App2App mode!\n");
 
+        mRtcEngine.setParameters("{\"che.audio.external_capture\": true}");
+        mRtcEngine.setParameters("{\"che.audio.external_render\": true}");
+        mRtcEngine.registerAudioFrameObserver(this);
         startAudioGather();
         startAudioPlayer();
     }
@@ -302,27 +306,38 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
     private void finishApp2App() {
         finishAudioGather();
         finishAudioPlayer();
+//        mRtcEngine.registerAudioFrameObserver(null);
     }
 
     private void doApp2Sdk() {
+        mRtcEngine.setParameters("{\"che.audio.external_capture\": true}");
+        mRtcEngine.setParameters("{\"che.audio.external_render\": false}");
+        mRtcEngine.registerAudioFrameObserver(this);
         mTvInfoDisplay.append("enter App2SDK mode!\n");
         startAudioGather();
     }
 
     private void finishApp2Sdk() {
         finishAudioGather();
+        mRtcEngine.registerAudioFrameObserver(null);
     }
 
     private void doSdk2App() {
+        mRtcEngine.setParameters("{\"che.audio.external_render\": true}");
+        mRtcEngine.setParameters("{\"che.audio.external_capture\": false}");
         mTvInfoDisplay.append("enter SDK2App mode!\n");
+        mRtcEngine.registerAudioFrameObserver(this);
         startAudioPlayer();
     }
 
     private void finishSdk2App() {
         finishAudioPlayer();
+        mRtcEngine.registerAudioFrameObserver(null);
     }
 
     private void doSdk2Sdk() {
+        mRtcEngine.setParameters("{\"che.audio.external_capture\": false}");
+        mRtcEngine.setParameters("{\"che.audio.external_render\": false}");
         mTvInfoDisplay.append("enter SDK2SDK mode!\n");
     }
 
@@ -351,8 +366,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
         if (mAudioPlayer == null)
             mAudioPlayer = new AudioPlayer();
 
-        mRtcEngine.setParameters("{\"che.audio.external_render\": true}");
-        mRtcEngine.registerAudioFrameObserver(this);
+//        mRtcEngine.registerAudioFrameObserver(this);
 
         f = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/123.pcm") ;
         if(f.exists()){
@@ -370,7 +384,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
         if (mAudioPlayer != null) {
             mAudioPlayer.stopPlayer();
             mIsPlaying = false ;
-            mRtcEngine.registerAudioFrameObserver(null);
+
         }
     }
 

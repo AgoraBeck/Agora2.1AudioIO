@@ -7,3 +7,10 @@ build/intermediates
 app/src/main/libs/
 build/
 .gradle/3.3/tasks/
+.idea//
+.gradle/
+app/src/main/jniLibs
+*/.DS_Store
+app/libs
+.idea/workspace.xml
+app/app.iml

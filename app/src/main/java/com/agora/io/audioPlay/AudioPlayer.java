@@ -31,6 +31,7 @@ public class AudioPlayer {
             if (mAudioTrack.getState() == AudioTrack.STATE_UNINITIALIZED) {
                 throw new RuntimeException("Error on AudioTrack created");
             }
+            mAudioTrack.play();
             mAudioStatus = AudioStatus.RUNNING ;
         }
 
@@ -42,13 +43,13 @@ public class AudioPlayer {
             mAudioStatus = AudioStatus.INITIALISING ;
             mAudioTrack.stop();
             mAudioTrack.release();
+            mAudioTrack = null;
         }
     }
 
     public boolean play(byte[] audioData, int offsetInBytes, int sizeInBytes) {
         if(mAudioStatus == AudioStatus.RUNNING) {
             mAudioTrack.write(audioData, offsetInBytes, sizeInBytes);
-            mAudioTrack.play();
         }
         return true;
     }
