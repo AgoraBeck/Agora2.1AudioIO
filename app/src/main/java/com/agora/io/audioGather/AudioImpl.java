@@ -1,8 +1,12 @@
 package com.agora.io.audioGather;
-
+import android.os.Environment;
 import android.media.AudioFormat;
 import android.media.AudioRecord;
 import android.media.MediaRecorder;
+import android.util.Log;
+
+import java.io.FileInputStream;
+import java.io.InputStream;
 
 public class AudioImpl implements IAudioController {
     private static final String TAG = AudioImpl.class.getName();
@@ -15,7 +19,10 @@ public class AudioImpl implements IAudioController {
 
     private int mFrameBufferSize = -1;
     private byte[] mAudioBuffer = null;
+    public static final Object LOCK = new Object();
 
+    //==
+    private InputStream in = null;
 
     @Override
     public AudioStatus init(IAudioCallback callback) {
@@ -23,13 +30,19 @@ public class AudioImpl implements IAudioController {
             this.callback = callback;
             mStatus = AudioStatus.INITIALISING;
         }
+        //==
+        try {
+            in = new FileInputStream(Environment.getExternalStorageDirectory().getAbsolutePath() + "/Sugar_16k.pcm");
+        } catch (Exception e1) {
+            e1.printStackTrace();
+        }
         return mStatus;
     }
 
     @Override
     public AudioStatus start(int samplingRate) {
         if (mStatus == AudioStatus.INITIALISING) {
-            int sizeInBytes = AudioRecord.getMinBufferSize(samplingRate, AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT) * 2;
+            int sizeInBytes = AudioRecord.getMinBufferSize(samplingRate, AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT);
 
             if (mAudioRecorder != null) {
                 mAudioRecorder.release();
@@ -42,7 +55,7 @@ public class AudioImpl implements IAudioController {
                     AudioFormat.ENCODING_PCM_16BIT,
                     sizeInBytes);
 
-            mFrameBufferSize = samplingRate * mSendPeriod / 1000;
+            mFrameBufferSize = samplingRate * mSendPeriod / 1000 * 1;
 
             if (mAudioBuffer == null)
                 mAudioBuffer = new byte[mFrameBufferSize];
@@ -51,7 +64,10 @@ public class AudioImpl implements IAudioController {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    gatherData();
+                    //Add Lock
+//                    synchronized(AudioImpl.LOCK) {
+                        gatherData();
+//                    }
                 }
             }).start();
             mStatus = AudioStatus.RUNNING;
@@ -78,12 +94,24 @@ public class AudioImpl implements IAudioController {
         }
     }
 
+    int byteread = 0;
     private void gatherData() {
         while (mStatus == AudioStatus.RUNNING) {
             int read = mAudioRecorder.read(mAudioBuffer, 0, mFrameBufferSize);
-            if (read != mFrameBufferSize)
+            if (read != mFrameBufferSize){
+                Log.e(TAG,"== before :onAudioDataAvailable ==");
                 continue;
-            callback.onAudioDataAvailable(System.currentTimeMillis(), mAudioBuffer);
+            }
+            if (mAudioBuffer != null)
+                callback.onAudioDataAvailable(System.currentTimeMillis(), mAudioBuffer);
         }
+
+//       try {
+//            while ((byteread = in.read(mAudioBuffer)) != -1) {
+//                callback.onAudioDataAvailable(System.currentTimeMillis(), mAudioBuffer);
+//            }
+//        } catch (Exception e1) {
+//            e1.printStackTrace();
+//        }
     }
 }

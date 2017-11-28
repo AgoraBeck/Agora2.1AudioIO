@@ -1,0 +1,228 @@
+diff --git a/.idea/libraries/__local_aars____Users_beck_Desktop_Agora2_0AudioIO_app_libs_agora_rtc_sdk_jar_unspecified_jar.xml b/.idea/libraries/__local_aars____Users_beck_Desktop_Agora2_0AudioIO_app_libs_agora_rtc_sdk_jar_unspecified_jar.xml
+deleted file mode 100644
+index 220c819..0000000
+--- a/.idea/libraries/__local_aars____Users_beck_Desktop_Agora2_0AudioIO_app_libs_agora_rtc_sdk_jar_unspecified_jar.xml
++++ /dev/null
+@@ -1,9 +0,0 @@
+-<component name="libraryTable">
+-  <library name="__local_aars__:/Users/beck/Desktop/Agora2.0AudioIO/app/libs/agora-rtc-sdk.jar:unspecified@jar">
+-    <CLASSES>
+-      <root url="jar://$PROJECT_DIR$/app/libs/agora-rtc-sdk.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES />
+-  </library>
+-</component>
+\ No newline at end of file
+diff --git a/app/src/main/java/com/agora/io/ChatRoomActivity.java b/app/src/main/java/com/agora/io/ChatRoomActivity.java
+index 6fe81b2..3b9df38 100644
+--- a/app/src/main/java/com/agora/io/ChatRoomActivity.java
++++ b/app/src/main/java/com/agora/io/ChatRoomActivity.java
+@@ -37,7 +37,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
+     private String mStrChannelName;
+     private AudioEnum mAE;
+     private AudioProfile mAP;
+-    private RtcEngine mRtcEngine;
++    private RtcEngine mRtcEngine = null;
+     private int samplingRate;
+     private AudioPlayer mAudioPlayer;
+     private AudioImpl mAI;
+@@ -214,10 +214,12 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
+ 
+     private void initAgoraEngine() {
+         try {
+-            mRtcEngine = RtcEngine.create(ChatRoomActivity.this , getString(R.string.app_key), mEngineHandler);
+-            mRtcEngine.setChannelProfile(Constants.CHANNEL_PROFILE_LIVE_BROADCASTING) ;
+-            mRtcEngine.setClientRole(Constants.CLIENT_ROLE_BROADCASTER,"") ;
+-            mRtcEngine.setEnableSpeakerphone(false);
++            if(mRtcEngine == null){
++                mRtcEngine = RtcEngine.create(ChatRoomActivity.this , getString(R.string.app_key), mEngineHandler);
++                mRtcEngine.setChannelProfile(Constants.CHANNEL_PROFILE_LIVE_BROADCASTING) ;
++                mRtcEngine.setClientRole(Constants.CLIENT_ROLE_BROADCASTER,"") ;
++                mRtcEngine.setEnableSpeakerphone(false);
++            }
+         } catch (Exception e) {
+             e.printStackTrace();
+         }
+@@ -227,6 +229,11 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
+     public void onAudioDataAvailable(long timeStamp, byte[] audioData) {
+             mRtcEngine.pushExternalAudioFrame(audioData, timeStamp);
+ //        Log.e(TAG , Arrays.toString(audioData)) ;
++        try {
++            fps.write(audioData);
++        } catch (IOException e) {
++            e.printStackTrace();
++        }
+     }
+ 
+     @Override
+@@ -237,18 +244,13 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
+ 
+     @Override
+     public boolean onPlaybackFrame(final byte[] bytes, int i, int i1, int i2, final int i3) {
+-       // Log.e(TAG , Arrays.toString(bytes)) ;
++        Log.e(TAG , Arrays.toString(bytes)) ;
+         if (!mIsPlaying) {
+             mAudioPlayer.startPlayer(AudioManager.STREAM_VOICE_CALL, i3, AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT);
+             mIsPlaying = true;
+         }
+         mAudioPlayer.play(bytes, 0, bytes.length);
+ 
+-        try {
+-            fps.write(bytes);
+-        } catch (IOException e) {
+-            e.printStackTrace();
+-        }
+         return true;
+     }
+ 
+@@ -293,41 +295,43 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
+         }
+         Log.e(TAG , "onLeaveChannel") ;
+         leaveChannel();
+-        mRtcEngine.destroy();
++//        mRtcEngine.destroy();
+     }
+ 
+     private void doApp2App() {
+         mTvInfoDisplay.append("enter App2App mode!\n");
+-
+-        mRtcEngine.setParameters("{\"che.audio.external_capture\": true}");
++        startAudioGather();
+         mRtcEngine.setParameters("{\"che.audio.external_render\": true}");
+         mRtcEngine.registerAudioFrameObserver(this);
+-        startAudioGather();
+         startAudioPlayer();
+     }
+ 
+     private void finishApp2App() {
++        mRtcEngine.registerAudioFrameObserver(null);
+         finishAudioGather();
+         finishAudioPlayer();
+-        mRtcEngine.registerAudioFrameObserver(null);
++
+     }
+ 
+     private void doApp2Sdk() {
+-        mRtcEngine.setParameters("{\"che.audio.external_capture\": true}");
++        startAudioGather();
++//        mRtcEngine.setParameters("{\"che.audio.external_capture\": true}");
+         mRtcEngine.setParameters("{\"che.audio.external_render\": false}");
+         mRtcEngine.registerAudioFrameObserver(this);
+         mTvInfoDisplay.append("enter App2SDK mode!\n");
+-        startAudioGather();
++
++
+     }
+ 
+     private void finishApp2Sdk() {
+-        finishAudioGather();
+         mRtcEngine.registerAudioFrameObserver(null);
++        finishAudioGather();
+     }
+ 
+     private void doSdk2App() {
+         mRtcEngine.setParameters("{\"che.audio.external_render\": true}");
+-        mRtcEngine.setParameters("{\"che.audio.external_capture\": false}");
++//        mRtcEngine.setParameters("{\"che.audio.external_capture\": false}");
++        mRtcEngine.setExternalAudioSource(false, samplingRate,1);
+         mTvInfoDisplay.append("enter SDK2App mode!\n");
+         mRtcEngine.registerAudioFrameObserver(this);
+         startAudioPlayer();
+@@ -339,8 +343,9 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
+     }
+ 
+     private void doSdk2Sdk() {
+-        mRtcEngine.setParameters("{\"che.audio.external_capture\": false}");
+-        mRtcEngine.setParameters("{\"che.audio.external_render\": false}");
++//        mRtcEngine.setParameters("{\"che.audio.external_capture\": false}");
++//        mRtcEngine.setParameters("{\"che.audio.external_render\": false}");
++
+         mRtcEngine.setExternalAudioSource(false, samplingRate,1);
+         mTvInfoDisplay.append("enter SDK2SDK mode!\n");
+     }
+@@ -355,6 +360,16 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
+             mAI = new AudioImpl();
+         mAI.init(this);
+         mAI.start(samplingRate);
++        f = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/123.pcm") ;
++        if(f.exists()){
++            f.delete() ;
++        }
++
++        try {
++            fps = new FileOutputStream(f) ;
++        } catch (FileNotFoundException e) {
++            e.printStackTrace();
++        }
+     }
+ 
+     private void finishAudioGather() {
+@@ -372,23 +387,14 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
+ 
+ //        mRtcEngine.registerAudioFrameObserver(this);
+ 
+-        f = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/123.pcm") ;
+-        if(f.exists()){
+-            f.delete() ;
+-        }
+-
+-        try {
+-            fps = new FileOutputStream(f) ;
+-        } catch (FileNotFoundException e) {
+-            e.printStackTrace();
+-        }
+     }
+ 
+     private void finishAudioPlayer() {
+         if (mAudioPlayer != null) {
++            Log.d(TAG, "=== finishAudioPlayer ===");
+             mAudioPlayer.stopPlayer();
+-            mIsPlaying = false ;
+         }
++        mIsPlaying = false ;
+     }
+ 
+     private void joinChannel() {
+diff --git a/app/src/main/java/com/agora/io/audioGather/AudioImpl.java b/app/src/main/java/com/agora/io/audioGather/AudioImpl.java
+index 588af9c..f1503dc 100755
+--- a/app/src/main/java/com/agora/io/audioGather/AudioImpl.java
++++ b/app/src/main/java/com/agora/io/audioGather/AudioImpl.java
+@@ -15,6 +15,7 @@ public class AudioImpl implements IAudioController {
+ 
+     private int mFrameBufferSize = -1;
+     private byte[] mAudioBuffer = null;
++    public static final Object LOCK = new Object();
+ 
+ 
+     @Override
+@@ -29,7 +30,7 @@ public class AudioImpl implements IAudioController {
+     @Override
+     public AudioStatus start(int samplingRate) {
+         if (mStatus == AudioStatus.INITIALISING) {
+-            int sizeInBytes = AudioRecord.getMinBufferSize(samplingRate, AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT) * 2;
++            int sizeInBytes = AudioRecord.getMinBufferSize(samplingRate, AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT);
+ 
+             if (mAudioRecorder != null) {
+                 mAudioRecorder.release();
+@@ -42,7 +43,7 @@ public class AudioImpl implements IAudioController {
+                     AudioFormat.ENCODING_PCM_16BIT,
+                     sizeInBytes);
+ 
+-            mFrameBufferSize = samplingRate * mSendPeriod / 1000;
++            mFrameBufferSize = samplingRate * mSendPeriod / 1000 * 1;
+ 
+             if (mAudioBuffer == null)
+                 mAudioBuffer = new byte[mFrameBufferSize];
+@@ -51,7 +52,10 @@ public class AudioImpl implements IAudioController {
+             new Thread(new Runnable() {
+                 @Override
+                 public void run() {
+-                    gatherData();
++                    //Add Lock
++                    synchronized(AudioImpl.LOCK) {
++                        gatherData();
++                    }
+                 }
+             }).start();
+             mStatus = AudioStatus.RUNNING;

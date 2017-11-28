@@ -5,6 +5,7 @@ package com.agora.io.audioPlay;
  */
 
 import android.media.AudioTrack;
+import android.util.Log;
 
 import com.agora.io.audioGather.AudioStatus;
 
@@ -32,7 +33,7 @@ public class AudioPlayer {
                 throw new RuntimeException("Error on AudioTrack created");
             }
             mAudioTrack.play();
-            mAudioStatus = AudioStatus.RUNNING ;
+            mAudioStatus = AudioStatus.RUNNING;
         }
 
         return true;
@@ -40,16 +41,21 @@ public class AudioPlayer {
 
     public void stopPlayer() {
         if(mAudioStatus == AudioStatus.RUNNING) {
+            Log.e("beck","Here it is 1 !");
             mAudioStatus = AudioStatus.INITIALISING ;
             mAudioTrack.stop();
             mAudioTrack.release();
             mAudioTrack = null;
+            Log.e("beck","Here it is 2!");
         }
+        Log.e("beck","Here it is 3,mAudioStatus: " + mAudioStatus);
     }
 
     public boolean play(byte[] audioData, int offsetInBytes, int sizeInBytes) {
         if(mAudioStatus == AudioStatus.RUNNING) {
             mAudioTrack.write(audioData, offsetInBytes, sizeInBytes);
+        }else{
+            Log.e("AudioPlayer", "=== AudioPlayer Play ===");
         }
         return true;
     }

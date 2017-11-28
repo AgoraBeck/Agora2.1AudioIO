@@ -23,6 +23,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Arrays;
 
+import javax.security.auth.login.LoginException;
+
 import agora.io.agoraaudio.R;
 import io.agora.rtc.Constants;
 import io.agora.rtc.IAudioFrameObserver;
@@ -37,10 +39,16 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
     private String mStrChannelName;
     private AudioEnum mAE;
     private AudioProfile mAP;
-    private RtcEngine mRtcEngine;
+    private RtcEngine mRtcEngine = null;
     private int samplingRate;
-    private AudioPlayer mAudioPlayer;
+    private AudioPlayer mAudioPlayer = null;
     private AudioImpl mAI;
+
+    private int channels = 1; // 1: Mono, 2: Stereo
+    private int rawReadWriteMode = 2;  // readOnly : 0, writeOnly: 1, Readwrite:2
+
+    File f ;
+    FileOutputStream fps ;
 
     IRtcEngineEventHandler mEngineHandler = new IRtcEngineEventHandler() {
         @Override
@@ -138,7 +146,15 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
         initAgoraEngine();
         dispatchWork();
     }
-
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.e(TAG,"== Destroy ==");
+        leaveChannel();
+        mRtcEngine.destroy();
+        mRtcEngine = null;
+        Log.e(TAG,"== Destroy Done ==");
+    }
     private void initAction() {
         Intent mIntent = getIntent();
         mStrChannelName = mIntent.getStringExtra(Constants_.CHANNEL_NAME);
@@ -211,10 +227,13 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
 
     private void initAgoraEngine() {
         try {
-            mRtcEngine = RtcEngine.create(ChatRoomActivity.this , getString(R.string.app_key), mEngineHandler);
-            mRtcEngine.setChannelProfile(Constants.CHANNEL_PROFILE_LIVE_BROADCASTING) ;
-            mRtcEngine.setClientRole(Constants.CLIENT_ROLE_BROADCASTER,"") ;
-            mRtcEngine.setEnableSpeakerphone(false);
+            if(mRtcEngine == null){
+                Log.d(TAG,"== initAgoraEngine ==");
+                mRtcEngine = RtcEngine.create(ChatRoomActivity.this , getString(R.string.app_key), mEngineHandler);
+                mRtcEngine.setChannelProfile(Constants.CHANNEL_PROFILE_LIVE_BROADCASTING) ;
+                mRtcEngine.setClientRole(Constants.CLIENT_ROLE_BROADCASTER,"") ;
+                mRtcEngine.setEnableSpeakerphone(false);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -223,29 +242,23 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
     @Override
     public void onAudioDataAvailable(long timeStamp, byte[] audioData) {
             mRtcEngine.pushExternalAudioFrame(audioData, timeStamp);
-//        Log.e(TAG , Arrays.toString(audioData)) ;
     }
 
     @Override
     public boolean onRecordFrame(byte[] bytes, int i, int i1, int i2, int i3) {
-       // Log.e(TAG , Arrays.toString(bytes)) ;
+        Log.e(TAG,"=== onRecordFrame ====");
         return true;
     }
 
     @Override
     public boolean onPlaybackFrame(final byte[] bytes, int i, int i1, int i2, final int i3) {
-       // Log.e(TAG , Arrays.toString(bytes)) ;
+        Log.e(TAG , Arrays.toString(bytes)) ;
         if (!mIsPlaying) {
+            Log.e(TAG, "== create Audio Track==");
             mAudioPlayer.startPlayer(AudioManager.STREAM_VOICE_CALL, i3, AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT);
             mIsPlaying = true;
         }
         mAudioPlayer.play(bytes, 0, bytes.length);
-
-        try {
-            fps.write(bytes);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
         return true;
     }
 
@@ -289,42 +302,42 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
                 break;
         }
         Log.e(TAG , "onLeaveChannel") ;
-        leaveChannel();
-        mRtcEngine.destroy();
+        finish();
     }
 
     private void doApp2App() {
         mTvInfoDisplay.append("enter App2App mode!\n");
-
-        mRtcEngine.setParameters("{\"che.audio.external_capture\": true}");
+        startAudioGather();
+        mRtcEngine.setExternalAudioSource(true, samplingRate, 1);
         mRtcEngine.setParameters("{\"che.audio.external_render\": true}");
         mRtcEngine.registerAudioFrameObserver(this);
-        startAudioGather();
+
         startAudioPlayer();
     }
 
     private void finishApp2App() {
+        mRtcEngine.setExternalAudioSource(false, samplingRate, 1);
+        mRtcEngine.setParameters("{\"che.audio.external_render\": false}");
+        mRtcEngine.registerAudioFrameObserver(null);
         finishAudioGather();
         finishAudioPlayer();
-//        mRtcEngine.registerAudioFrameObserver(null);
     }
 
     private void doApp2Sdk() {
-        mRtcEngine.setParameters("{\"che.audio.external_capture\": true}");
-        mRtcEngine.setParameters("{\"che.audio.external_render\": false}");
-        mRtcEngine.registerAudioFrameObserver(this);
-        mTvInfoDisplay.append("enter App2SDK mode!\n");
+        mRtcEngine.setExternalAudioSource(true, samplingRate, 1);
         startAudioGather();
+        mRtcEngine.setParameters("{\"che.audio.external_render\": false}");
+        mTvInfoDisplay.append("enter App2SDK mode!\n");
     }
 
     private void finishApp2Sdk() {
+        mRtcEngine.setExternalAudioSource(false, samplingRate, 1);
         finishAudioGather();
-        mRtcEngine.registerAudioFrameObserver(null);
     }
 
     private void doSdk2App() {
         mRtcEngine.setParameters("{\"che.audio.external_render\": true}");
-        mRtcEngine.setParameters("{\"che.audio.external_capture\": false}");
+//        mRtcEngine.setParameters("{\"che.audio.external_capture\": false}");
         mTvInfoDisplay.append("enter SDK2App mode!\n");
         mRtcEngine.registerAudioFrameObserver(this);
         startAudioPlayer();
@@ -333,11 +346,11 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
     private void finishSdk2App() {
         finishAudioPlayer();
         mRtcEngine.registerAudioFrameObserver(null);
+        mRtcEngine.setParameters("{\"che.audio.external_render\": false}");
+
     }
 
     private void doSdk2Sdk() {
-        mRtcEngine.setParameters("{\"che.audio.external_capture\": false}");
-        mRtcEngine.setParameters("{\"che.audio.external_render\": false}");
         mTvInfoDisplay.append("enter SDK2SDK mode!\n");
     }
 
@@ -345,12 +358,22 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
     }
 
     private void startAudioGather() {
-        mRtcEngine.setExternalAudioSource(true, samplingRate, 1);
-
-        if (mAI == null)
+        if (mAI == null) {
             mAI = new AudioImpl();
+        }
+
         mAI.init(this);
         mAI.start(samplingRate);
+//        f = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/123.pcm") ;
+//        if(f.exists()){
+//            f.delete() ;
+//        }
+
+//        try {
+//            fps = new FileOutputStream(f) ;
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        }
     }
 
     private void finishAudioGather() {
@@ -360,43 +383,31 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
         }
     }
 
-    File f ;
-    FileOutputStream fps ;
+
     private void startAudioPlayer() {
         if (mAudioPlayer == null)
             mAudioPlayer = new AudioPlayer();
-
-//        mRtcEngine.registerAudioFrameObserver(this);
-
-        f = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/123.pcm") ;
-        if(f.exists()){
-            f.delete() ;
-        }
-
-        try {
-            fps = new FileOutputStream(f) ;
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
     }
 
     private void finishAudioPlayer() {
+        Log.d(TAG, "=== finishAudioPlayer Start ===");
         if (mAudioPlayer != null) {
+            Log.d(TAG, "=== finishAudioPlayer ===");
             mAudioPlayer.stopPlayer();
-            mIsPlaying = false ;
-
         }
+        mIsPlaying = false ;
+        Log.d(TAG, "=== finishAudioPlayer Done ===");
     }
 
     private void joinChannel() {
         mRtcEngine.setParameters("{\"rtc.log_filter\":65535}");
         mRtcEngine.setLogFile("/sdcard/open_live.log");
+
         mRtcEngine.joinChannel(null, mStrChannelName.trim(), getResources().getString(R.string.app_key), 0);
     }
 
     private void leaveChannel() {
         mRtcEngine.leaveChannel();
-        finish();
     }
 
     private void sendMessage(@NonNull final String s) {
