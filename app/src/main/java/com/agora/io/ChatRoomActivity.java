@@ -75,6 +75,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
 
         @Override
         public void onLeaveChannel(RtcStats stats) {
+            Log.e(TAG,"onLeaveChannel");
             super.onLeaveChannel(stats);
         }
 
@@ -148,11 +149,11 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
     }
     @Override
     protected void onDestroy() {
-        super.onDestroy();
         Log.e(TAG,"== Destroy ==");
         leaveChannel();
         mRtcEngine.destroy();
         mRtcEngine = null;
+        super.onDestroy();
         Log.e(TAG,"== Destroy Done ==");
     }
     private void initAction() {
@@ -252,7 +253,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
 
     @Override
     public boolean onPlaybackFrame(final byte[] bytes, int i, int i1, int i2, final int i3) {
-        Log.e(TAG , Arrays.toString(bytes)) ;
+//        Log.e(TAG , Arrays.toString(bytes)) ;
         if (!mIsPlaying) {
             Log.e(TAG, "== create Audio Track==");
             mAudioPlayer.startPlayer(AudioManager.STREAM_VOICE_CALL, i3, AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT);
@@ -301,7 +302,6 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
                 Log.e(TAG, "error on dispatchFinish!");
                 break;
         }
-        Log.e(TAG , "onLeaveChannel") ;
         finish();
     }
 
@@ -316,9 +316,9 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
     }
 
     private void finishApp2App() {
-        mRtcEngine.setExternalAudioSource(false, samplingRate, 1);
-        mRtcEngine.setParameters("{\"che.audio.external_render\": false}");
         mRtcEngine.registerAudioFrameObserver(null);
+        mRtcEngine.setParameters("{\"che.audio.external_render\": false}");
+        mRtcEngine.setExternalAudioSource(false, samplingRate, 1);
         finishAudioGather();
         finishAudioPlayer();
     }
@@ -337,7 +337,6 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
 
     private void doSdk2App() {
         mRtcEngine.setParameters("{\"che.audio.external_render\": true}");
-//        mRtcEngine.setParameters("{\"che.audio.external_capture\": false}");
         mTvInfoDisplay.append("enter SDK2App mode!\n");
         mRtcEngine.registerAudioFrameObserver(this);
         startAudioPlayer();

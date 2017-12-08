@@ -19,7 +19,6 @@ public class AudioImpl implements IAudioController {
 
     private int mFrameBufferSize = -1;
     private byte[] mAudioBuffer = null;
-    public static final Object LOCK = new Object();
 
     //==
     private InputStream in = null;
@@ -59,15 +58,13 @@ public class AudioImpl implements IAudioController {
 
             if (mAudioBuffer == null)
                 mAudioBuffer = new byte[mFrameBufferSize];
+                
 
             mAudioRecorder.startRecording();
             new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    //Add Lock
-//                    synchronized(AudioImpl.LOCK) {
                         gatherData();
-//                    }
                 }
             }).start();
             mStatus = AudioStatus.RUNNING;
