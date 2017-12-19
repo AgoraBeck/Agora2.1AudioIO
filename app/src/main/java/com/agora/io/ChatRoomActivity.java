@@ -46,6 +46,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
 
     private int channels = 1; // 1: Mono, 2: Stereo
     private int rawReadWriteMode = 2;  // readOnly : 0, writeOnly: 1, Readwrite:2
+    private boolean isLeaveChannel = true;
 
     File f ;
     FileOutputStream fps ;
@@ -60,6 +61,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
         @Override
         public void onRejoinChannelSuccess(String channel, int uid, int elapsed) {
             super.onRejoinChannelSuccess(channel, uid, elapsed);
+            isLeaveChannel = true;
         }
 
         @Override
@@ -77,6 +79,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
         public void onLeaveChannel(RtcStats stats) {
             Log.e(TAG,"onLeaveChannel");
             super.onLeaveChannel(stats);
+            isLeaveChannel = true;
         }
 
         @Override
@@ -149,12 +152,10 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
     }
     @Override
     protected void onDestroy() {
-        Log.e(TAG,"== Destroy ==");
-        leaveChannel();
-        mRtcEngine.destroy();
-        mRtcEngine = null;
+//        leaveChannel();
+//        mRtcEngine.destroy();
+//        mRtcEngine = null;
         super.onDestroy();
-        Log.e(TAG,"== Destroy Done ==");
     }
     private void initAction() {
         Intent mIntent = getIntent();
@@ -254,12 +255,15 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
     @Override
     public boolean onPlaybackFrame(final byte[] bytes, int i, int i1, int i2, final int i3) {
 //        Log.e(TAG , Arrays.toString(bytes)) ;
-        if (!mIsPlaying) {
-            Log.e(TAG, "== create Audio Track==");
-            mAudioPlayer.startPlayer(AudioManager.STREAM_VOICE_CALL, i3, AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT);
-            mIsPlaying = true;
+        if(mAudioPlayer!= null) {
+            mAudioPlayer.play(bytes, 0, bytes.length);
         }
-        mAudioPlayer.play(bytes, 0, bytes.length);
+        try {
+            fps.write(bytes);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
         return true;
     }
 
@@ -281,7 +285,12 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
                 Log.e(TAG, "error on dispatchWork!");
                 break;
         }
-        joinChannel();
+        if(isLeaveChannel) {
+            joinChannel();
+        }
+        else{
+            Log.e("TAG", "Not joinChannel()");
+        }
     }
 
     private void dispatchFinish() {
@@ -302,6 +311,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
                 Log.e(TAG, "error on dispatchFinish!");
                 break;
         }
+        leaveChannel();
         finish();
     }
 
@@ -311,6 +321,9 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
         mRtcEngine.setExternalAudioSource(true, samplingRate, 1);
         mRtcEngine.setParameters("{\"che.audio.external_render\": true}");
         mRtcEngine.registerAudioFrameObserver(this);
+        mRtcEngine.setPlaybackAudioFrameParameters(16000,1,0,160);
+        mAudioPlayer.startPlayer(AudioManager.STREAM_VOICE_CALL, 16000, AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT);
+        mIsPlaying = true;
 
         startAudioPlayer();
     }
@@ -336,10 +349,18 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
     }
 
     private void doSdk2App() {
+        startAudioPlayer();
+        mRtcEngine.setPlaybackAudioFrameParameters(16000, 1, 0, 160);
         mRtcEngine.setParameters("{\"che.audio.external_render\": true}");
         mTvInfoDisplay.append("enter SDK2App mode!\n");
         mRtcEngine.registerAudioFrameObserver(this);
-        startAudioPlayer();
+
+        if (null != mAudioPlayer) {
+            Log.e("Beck", "Start Audio Self Play");
+//        mAudioPlayer.startPlayer(AudioManager.STREAM_VOICE_CALL, 16000, AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT);
+            mAudioPlayer.startPlayer(AudioManager.STREAM_VOICE_CALL, 16000, AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT);
+            mIsPlaying = true;
+        }
     }
 
     private void finishSdk2App() {
@@ -362,7 +383,8 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
         }
 
         mAI.init(this);
-        mAI.start(samplingRate);
+//        mAI.start(samplingRate);
+
 //        f = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/123.pcm") ;
 //        if(f.exists()){
 //            f.delete() ;
@@ -386,21 +408,32 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
     private void startAudioPlayer() {
         if (mAudioPlayer == null)
             mAudioPlayer = new AudioPlayer();
+
+        f = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/123.pcm") ;
+        if(f.exists()){
+            f.delete() ;
+        }
+        try {
+            fps = new FileOutputStream(f) ;
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     private void finishAudioPlayer() {
-        Log.d(TAG, "=== finishAudioPlayer Start ===");
         if (mAudioPlayer != null) {
-            Log.d(TAG, "=== finishAudioPlayer ===");
             mAudioPlayer.stopPlayer();
         }
         mIsPlaying = false ;
-        Log.d(TAG, "=== finishAudioPlayer Done ===");
     }
 
     private void joinChannel() {
         mRtcEngine.setParameters("{\"rtc.log_filter\":65535}");
         mRtcEngine.setLogFile("/sdcard/open_live.log");
+
+//        mRtcEngine.setParameters("{\"che.audio.start_debug_recording\":true}");
+//        mRtcEngine.setParameters("{\"che.audio.start_farend_recording\":true}");
+//        mRtcEngine.setParameters("{\"che.audio.start_nearend_recording\":true}");
 
         mRtcEngine.joinChannel(null, mStrChannelName.trim(), getResources().getString(R.string.app_key), 0);
     }

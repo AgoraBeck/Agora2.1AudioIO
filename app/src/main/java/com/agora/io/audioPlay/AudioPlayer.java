@@ -4,6 +4,7 @@ package com.agora.io.audioPlay;
  * Created by wubingshuai on 21/11/2017.
  */
 
+import android.media.AudioFormat;
 import android.media.AudioTrack;
 import android.util.Log;
 
@@ -24,6 +25,9 @@ public class AudioPlayer {
             }
 
             int mMinBufferSize = AudioTrack.getMinBufferSize(sampleRateInHz, channelConfig, audioFormat);
+            Log.e("==Beck==", " sampleRateInHz :" +sampleRateInHz + " channelConfig :"+channelConfig +  " audioFormat: "+audioFormat);
+//            long val =  (mMinBufferSize & 0xffffffffL);
+            Log.e("==Beck==" , " val:  "  +  mMinBufferSize);
             if (mMinBufferSize == AudioTrack.ERROR_BAD_VALUE) {
                 return false;
             }
@@ -41,7 +45,6 @@ public class AudioPlayer {
 
     public void stopPlayer() {
         if(mAudioStatus == AudioStatus.RUNNING) {
-            Log.e("beck","Here it is 1 !");
             mAudioStatus = AudioStatus.INITIALISING ;
             mAudioTrack.stop();
             mAudioTrack.release();

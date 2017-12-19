@@ -20,8 +20,8 @@ public class AudioImpl implements IAudioController {
     private int mFrameBufferSize = -1;
     private byte[] mAudioBuffer = null;
 
-    //==
     private InputStream in = null;
+    private int byteread = 0;
 
     @Override
     public AudioStatus init(IAudioCallback callback) {
@@ -29,19 +29,20 @@ public class AudioImpl implements IAudioController {
             this.callback = callback;
             mStatus = AudioStatus.INITIALISING;
         }
-        //==
-        try {
-            in = new FileInputStream(Environment.getExternalStorageDirectory().getAbsolutePath() + "/Sugar_16k.pcm");
-        } catch (Exception e1) {
-            e1.printStackTrace();
-        }
+
+//        try {
+//            in = new FileInputStream(Environment.getExternalStorageDirectory().getAbsolutePath() + "/Sugar_16k.pcm");
+//        } catch (Exception e1) {
+//            e1.printStackTrace();
+//        }
         return mStatus;
     }
 
     @Override
     public AudioStatus start(int samplingRate) {
         if (mStatus == AudioStatus.INITIALISING) {
-            int sizeInBytes = AudioRecord.getMinBufferSize(samplingRate, AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT);
+            // Double the size for much safer
+            int sizeInBytes = AudioRecord.getMinBufferSize(samplingRate, AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT) * 2;
 
             if (mAudioRecorder != null) {
                 mAudioRecorder.release();
@@ -64,7 +65,7 @@ public class AudioImpl implements IAudioController {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
-                        gatherData();
+                    gatherData();
                 }
             }).start();
             mStatus = AudioStatus.RUNNING;
@@ -91,7 +92,6 @@ public class AudioImpl implements IAudioController {
         }
     }
 
-    int byteread = 0;
     private void gatherData() {
         while (mStatus == AudioStatus.RUNNING) {
             int read = mAudioRecorder.read(mAudioBuffer, 0, mFrameBufferSize);
