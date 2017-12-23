@@ -56,6 +56,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
         public void onJoinChannelSuccess(String channel, int uid, int elapsed) {
             super.onJoinChannelSuccess(channel, uid, elapsed);
             sendMessage("JoinChannelSuccess:" + (uid & 0xFFFFFFFFL));
+            dispatchWork();
         }
 
         @Override
@@ -148,7 +149,6 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
         initAction();
         initWidget();
         initAgoraEngine();
-        dispatchWork();
     }
     @Override
     protected void onDestroy() {
@@ -239,6 +239,12 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
         } catch (Exception e) {
             e.printStackTrace();
         }
+        if(isLeaveChannel) {
+            joinChannel();
+        }
+        else{
+            Log.e("TAG", "Not joinChannel()");
+        }
     }
 
     @Override
@@ -285,12 +291,12 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
                 Log.e(TAG, "error on dispatchWork!");
                 break;
         }
-        if(isLeaveChannel) {
-            joinChannel();
-        }
-        else{
-            Log.e("TAG", "Not joinChannel()");
-        }
+//        if(isLeaveChannel) {
+//            joinChannel();
+//        }
+//        else{
+//            Log.e("TAG", "Not joinChannel()");
+//        }
     }
 
     private void dispatchFinish() {
@@ -317,15 +323,20 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
 
     private void doApp2App() {
         mTvInfoDisplay.append("enter App2App mode!\n");
+
         startAudioGather();
+        startAudioPlayer();
+
         mRtcEngine.setExternalAudioSource(true, samplingRate, 1);
         mRtcEngine.setParameters("{\"che.audio.external_render\": true}");
         mRtcEngine.registerAudioFrameObserver(this);
         mRtcEngine.setPlaybackAudioFrameParameters(16000,1,0,160);
-        mAudioPlayer.startPlayer(AudioManager.STREAM_VOICE_CALL, 16000, AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT);
-        mIsPlaying = true;
-
-        startAudioPlayer();
+        if (null != mAudioPlayer) {
+            Log.e("Beck", "Start Audio Self Play");
+//        mAudioPlayer.startPlayer(AudioManager.STREAM_VOICE_CALL, 16000, AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT);
+            mAudioPlayer.startPlayer(AudioManager.STREAM_VOICE_CALL, 16000, AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT);
+            mIsPlaying = true;
+        }
     }
 
     private void finishApp2App() {
