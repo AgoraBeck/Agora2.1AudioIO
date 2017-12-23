@@ -15,3 +15,4 @@ app/libs
 .idea/workspace.xml
 app/app.iml
 .idea/modules.xml
+*.DS_Store

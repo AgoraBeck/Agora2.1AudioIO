@@ -348,8 +348,8 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
     }
 
     private void doApp2Sdk() {
-        mRtcEngine.setExternalAudioSource(true, samplingRate, 1);
         startAudioGather();
+        mRtcEngine.setExternalAudioSource(true, samplingRate, 1);
         mRtcEngine.setParameters("{\"che.audio.external_render\": false}");
         mTvInfoDisplay.append("enter App2SDK mode!\n");
     }
@@ -392,8 +392,8 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
         if (mAI == null) {
             mAI = new AudioImpl();
         }
-
         mAI.init(this);
+        
 //        mAI.start(samplingRate);
 
 //        f = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/123.pcm") ;
