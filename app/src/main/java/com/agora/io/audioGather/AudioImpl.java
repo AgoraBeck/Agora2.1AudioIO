@@ -6,10 +6,10 @@ import android.media.MediaRecorder;
 import android.util.Log;
 
 import java.io.FileInputStream;
+
 import java.io.InputStream;
 
 public class AudioImpl implements IAudioController {
-    private static final String TAG = AudioImpl.class.getName();
     private final static int mSendPeriod = 20;
 
     private AudioRecord mAudioRecorder = null;
@@ -17,32 +17,27 @@ public class AudioImpl implements IAudioController {
 
     private AudioStatus mStatus = AudioStatus.STOPPED;
 
-    private int mFrameBufferSize = -1;
     private byte[] mAudioBuffer = null;
 
     private InputStream in = null;
     private int byteread = 0;
+    private int samplingRateVal = 0;
+    private int sizeInBytes = 0;
 
-    @Override
-    public AudioStatus init(IAudioCallback callback) {
+    public AudioImpl(int samplingRate, int channelConfig){
+        Log.e("beckLee", "beckLee 1111");
         if (mStatus == AudioStatus.STOPPED) {
-            this.callback = callback;
-            mStatus = AudioStatus.INITIALISING;
-        }
+            int val = 0;
+            samplingRateVal = samplingRate;
 
-//        try {
-//            in = new FileInputStream(Environment.getExternalStorageDirectory().getAbsolutePath() + "/Sugar_16k.pcm");
-//        } catch (Exception e1) {
-//            e1.printStackTrace();
-//        }
-        return mStatus;
-    }
+            if (1 == channelConfig)
+                val = AudioFormat.CHANNEL_IN_MONO;
+            else
+                val = AudioFormat.CHANNEL_IN_STEREO;
 
-    @Override
-    public AudioStatus start(int samplingRate) {
-        if (mStatus == AudioStatus.INITIALISING) {
             // Double the size for much safer
-            int sizeInBytes = AudioRecord.getMinBufferSize(samplingRate, AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT) * 2;
+            sizeInBytes = AudioRecord.getMinBufferSize(samplingRate, val, AudioFormat.ENCODING_PCM_16BIT) * 2;
+            Log.e("beckLee", "beckLee sizeInBytes: " + sizeInBytes);
 
             if (mAudioRecorder != null) {
                 mAudioRecorder.release();
@@ -51,17 +46,40 @@ public class AudioImpl implements IAudioController {
 
             mAudioRecorder = new AudioRecord(MediaRecorder.AudioSource.MIC,
                     samplingRate,
-                    AudioFormat.CHANNEL_IN_MONO,
+                    val,
                     AudioFormat.ENCODING_PCM_16BIT,
                     sizeInBytes);
+            if(mAudioRecorder == null)
+                Log.e("beckLee", "beckLee mAudioRecorder is null ");
+            mStatus = AudioStatus.INITIALISING;
+        }
+    }
 
-            mFrameBufferSize = samplingRate * mSendPeriod / 1000 * 1;
+    @Override
+    public AudioStatus init(IAudioCallback callback) {
+        if (mStatus == AudioStatus.INITIALISING) {
+            this.callback = callback;
+        }
+
+//        try {
+//            in = new FileInputStream(Environment.getExternalStorageDirectory().getAbsolutePath() + "/Sugar_16k.pcm");
+//        } catch (Exception e1) {
+//            e1.printStackTrace();
+//        }
+
+        return mStatus;
+    }
+
+    @Override
+    public AudioStatus start() {
+        if (mStatus == AudioStatus.INITIALISING) {
 
             if (mAudioBuffer == null)
-                mAudioBuffer = new byte[mFrameBufferSize];
+                mAudioBuffer = new byte[sizeInBytes];
                 
 
             mAudioRecorder.startRecording();
+
             new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -75,8 +93,8 @@ public class AudioImpl implements IAudioController {
 
     @Override
     public AudioStatus stop() {
-        if (mStatus == AudioStatus.RUNNING) {
-            mStatus = AudioStatus.INITIALISING;
+        mStatus = AudioStatus.INITIALISING;
+        if (null != mAudioRecorder){
             mAudioRecorder.stop();
             mAudioRecorder.release();
             mAudioBuffer = null;
@@ -94,10 +112,11 @@ public class AudioImpl implements IAudioController {
 
     private void gatherData() {
         while (mStatus == AudioStatus.RUNNING) {
-            int read = mAudioRecorder.read(mAudioBuffer, 0, mFrameBufferSize);
-            if (read != mFrameBufferSize){
-                Log.e(TAG,"== before :onAudioDataAvailable ==");
-                continue;
+            int read = mAudioRecorder.read(mAudioBuffer, 0, sizeInBytes);
+            if (read != sizeInBytes){
+
+                Log.e("beckLee","beckLee :onAudioDataAvailable ==");
+//                continue;
             }
             if (mAudioBuffer != null)
                 callback.onAudioDataAvailable(System.currentTimeMillis(), mAudioBuffer);

@@ -14,51 +14,60 @@ public class AudioPlayer {
 
     private static final int DEFAULT_PLAY_MODE = AudioTrack.MODE_STREAM;
 
-    private boolean mIsPlayStarted = false;
     private AudioTrack mAudioTrack;
-    private AudioStatus mAudioStatus = AudioStatus.INITIALISING ;
+    private AudioStatus mAudioStatus = AudioStatus.STOPPED ;
 
-    public boolean startPlayer(int streamType, int sampleRateInHz, int channelConfig, int audioFormat) {
-        if(mAudioStatus == AudioStatus.INITIALISING) {
-            if (mIsPlayStarted) {
-                return false;
-            }
+    public  AudioPlayer(int streamType, int sampleRateInHz, int channelConfig, int audioFormat){
+        if(mAudioStatus == AudioStatus.STOPPED) {
+            int Val = 0;
+            if( 1 == channelConfig)
+                Val = AudioFormat.CHANNEL_OUT_MONO;
+            else if(2 == channelConfig)
+                Val = AudioFormat.CHANNEL_OUT_STEREO;
+            else
+                Log.e("Error",  "channelConfig is wrong !");
 
-            int mMinBufferSize = AudioTrack.getMinBufferSize(sampleRateInHz, channelConfig, audioFormat);
-            Log.e("==Beck==", " sampleRateInHz :" +sampleRateInHz + " channelConfig :"+channelConfig +  " audioFormat: "+audioFormat);
-//            long val =  (mMinBufferSize & 0xffffffffL);
-            Log.e("==Beck==" , " val:  "  +  mMinBufferSize);
+            int mMinBufferSize = AudioTrack.getMinBufferSize(sampleRateInHz, Val, audioFormat);
+            Log.e("==Beck==", " sampleRateInHz :" + sampleRateInHz + " channelConfig :" + channelConfig + " audioFormat: " + audioFormat);
+            Log.e("==Beck==", " val:  " + mMinBufferSize);
             if (mMinBufferSize == AudioTrack.ERROR_BAD_VALUE) {
-                return false;
+                Log.e("==Beck==","AudioTrack.ERROR_BAD_VALUE : " + AudioTrack.ERROR_BAD_VALUE) ;
             }
 
-            mAudioTrack = new AudioTrack(streamType, sampleRateInHz, channelConfig, audioFormat, mMinBufferSize, DEFAULT_PLAY_MODE);
+            mAudioTrack = new AudioTrack(streamType, sampleRateInHz, Val, audioFormat, mMinBufferSize, DEFAULT_PLAY_MODE);
             if (mAudioTrack.getState() == AudioTrack.STATE_UNINITIALIZED) {
                 throw new RuntimeException("Error on AudioTrack created");
             }
+            mAudioStatus = AudioStatus.INITIALISING;
+        }
+        Log.e("AudioPlayer", "mAudioStatus: " + mAudioStatus);
+    }
+
+    public boolean startPlayer() {
+        if(mAudioStatus == AudioStatus.INITIALISING) {
             mAudioTrack.play();
             mAudioStatus = AudioStatus.RUNNING;
         }
-
+        Log.e("AudioPlayer", "mAudioStatus: " + mAudioStatus);
         return true;
     }
 
     public void stopPlayer() {
-        if(mAudioStatus == AudioStatus.RUNNING) {
-            mAudioStatus = AudioStatus.INITIALISING ;
+        if(null != mAudioTrack){
+            mAudioStatus = AudioStatus.STOPPED;
             mAudioTrack.stop();
             mAudioTrack.release();
             mAudioTrack = null;
-            Log.e("beck","Here it is 2!");
         }
-        Log.e("beck","Here it is 3,mAudioStatus: " + mAudioStatus);
+        Log.e("AudioPlayer", "mAudioStatus: " + mAudioStatus);
     }
 
     public boolean play(byte[] audioData, int offsetInBytes, int sizeInBytes) {
+
         if(mAudioStatus == AudioStatus.RUNNING) {
             mAudioTrack.write(audioData, offsetInBytes, sizeInBytes);
         }else{
-            Log.e("AudioPlayer", "=== AudioPlayer Play ===");
+            Log.e("AudioPlayer", "=== No data to AudioTrack !! mAudioStatus: " + mAudioStatus);
         }
         return true;
     }
