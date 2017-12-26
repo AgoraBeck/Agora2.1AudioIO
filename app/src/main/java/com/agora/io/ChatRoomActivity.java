@@ -35,6 +35,7 @@ import io.agora.rtc.IRtcEngineEventHandler;
 import io.agora.rtc.RtcEngine;
 
 public class ChatRoomActivity extends AppCompatActivity implements IAudioCallback, IAudioFrameObserver {
+
     private final static String TAG = ChatRoomActivity.class.getSimpleName();
     private TextView mTvInfoDisplay;
 
@@ -42,12 +43,12 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
     private AudioEnum mAE = AudioEnum.SDK2SDK;
     private AudioProfile mAP  = AudioProfile.AUDIO_PROFILE_16000;
     private RtcEngine mRtcEngine = null;
-    private int samplingRate =16000; // debug, use the fixed value
+    private int samplingRate = 16000; // debug, use the fixed value
     private AudioPlayer mAudioPlayer = null;
     private AudioImpl mAI = null;
-
+    private static final double sampleInterval  = 0.01; //  sampleInterval >= 0.01
     private int channels = 1; // 1: Mono, 2: Stereo
-    private int rawReadWriteMode = 2;  // readOnly : 0, writeOnly: 1, Readwrite:2
+    private int samplesPerCall = 0;
 
     File f ;
     FileOutputStream fps ;
@@ -183,6 +184,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
             case AUDIO_PROFILE_44100:
                 samplingRate = 44100;
         }
+        Log.d(TAG, "samplingRate: " + samplingRate);
     }
 
     private void initWidget() {
@@ -260,7 +262,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
 
     @Override
     public boolean onPlaybackFrame(final byte[] bytes, int i, int i1, int i2, final int i3) {
-//        Log.e(TAG , Arrays.toString(bytes)) ;
+//        Log.e(TAG , Arrays.toString(bytes));
         if(mAudioPlayer!= null) {
             mAudioPlayer.play(bytes, 0, bytes.length);
         }
@@ -274,9 +276,11 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
     }
 
     private void dispatchWork() {
+        //The algorithms for samplesPerCall of setPlaybackAudioFrameParameters()
+        samplesPerCall = (int)(samplingRate * channels * sampleInterval);
         switch (mAE) {
             case App2App:
-                doApp2App(samplingRate, channels);
+                doApp2App();
                 break;
             case App2SDK:
                 doApp2Sdk();
@@ -315,7 +319,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
         finish();
     }
 
-    private void doApp2App(int samplingRate, int channels) {
+    private void doApp2App() {
         mTvInfoDisplay.append("enter App2App mode!\n");
 
         startAudioGather(samplingRate, channels);
@@ -324,7 +328,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
         mRtcEngine.setExternalAudioSource(true, samplingRate, channels);
         mRtcEngine.setParameters("{\"che.audio.external_render\": true}");
         mRtcEngine.registerAudioFrameObserver(this);
-        mRtcEngine.setPlaybackAudioFrameParameters(samplingRate, channels,0,160);
+        mRtcEngine.setPlaybackAudioFrameParameters(samplingRate, channels,0, samplesPerCall);
     }
 
     private void finishApp2App() {
@@ -349,7 +353,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
 
     private void doSdk2App() {
         startAudioPlayer(AudioManager.STREAM_VOICE_CALL, samplingRate, channels, AudioFormat.ENCODING_PCM_16BIT);
-        mRtcEngine.setPlaybackAudioFrameParameters(16000, 1, 0, 160);
+        mRtcEngine.setPlaybackAudioFrameParameters(samplingRate, channels, 0, samplesPerCall);
         mRtcEngine.setParameters("{\"che.audio.external_render\": true}");
         mTvInfoDisplay.append("enter SDK2App mode!\n");
         mRtcEngine.registerAudioFrameObserver(this);

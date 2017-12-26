@@ -13,6 +13,7 @@ import com.agora.io.audioGather.AudioStatus;
 public class AudioPlayer {
 
     private static final int DEFAULT_PLAY_MODE = AudioTrack.MODE_STREAM;
+    private static final String  TAG = "AudioPlayer";
 
     private AudioTrack mAudioTrack;
     private AudioStatus mAudioStatus = AudioStatus.STOPPED ;
@@ -20,18 +21,18 @@ public class AudioPlayer {
     public  AudioPlayer(int streamType, int sampleRateInHz, int channelConfig, int audioFormat){
         if(mAudioStatus == AudioStatus.STOPPED) {
             int Val = 0;
-            if( 1 == channelConfig)
+            if(1 == channelConfig)
                 Val = AudioFormat.CHANNEL_OUT_MONO;
             else if(2 == channelConfig)
                 Val = AudioFormat.CHANNEL_OUT_STEREO;
             else
-                Log.e("Error",  "channelConfig is wrong !");
+                Log.e("Player",  "channelConfig is wrong !");
 
             int mMinBufferSize = AudioTrack.getMinBufferSize(sampleRateInHz, Val, audioFormat);
-            Log.e("==Beck==", " sampleRateInHz :" + sampleRateInHz + " channelConfig :" + channelConfig + " audioFormat: " + audioFormat);
-            Log.e("==Beck==", " val:  " + mMinBufferSize);
+            Log.e(TAG, " sampleRateInHz :" + sampleRateInHz + " channelConfig :" + channelConfig + " audioFormat: " + audioFormat);
+            Log.e(TAG, " mMinBufferSize:  " + mMinBufferSize);
             if (mMinBufferSize == AudioTrack.ERROR_BAD_VALUE) {
-                Log.e("==Beck==","AudioTrack.ERROR_BAD_VALUE : " + AudioTrack.ERROR_BAD_VALUE) ;
+                Log.e(TAG,"AudioTrack.ERROR_BAD_VALUE : " + AudioTrack.ERROR_BAD_VALUE) ;
             }
 
             mAudioTrack = new AudioTrack(streamType, sampleRateInHz, Val, audioFormat, mMinBufferSize, DEFAULT_PLAY_MODE);
@@ -40,7 +41,7 @@ public class AudioPlayer {
             }
             mAudioStatus = AudioStatus.INITIALISING;
         }
-        Log.e("AudioPlayer", "mAudioStatus: " + mAudioStatus);
+        Log.e(TAG, "mAudioStatus: " + mAudioStatus);
     }
 
     public boolean startPlayer() {
@@ -59,7 +60,7 @@ public class AudioPlayer {
             mAudioTrack.release();
             mAudioTrack = null;
         }
-        Log.e("AudioPlayer", "mAudioStatus: " + mAudioStatus);
+        Log.e(TAG, "mAudioStatus: " + mAudioStatus);
     }
 
     public boolean play(byte[] audioData, int offsetInBytes, int sizeInBytes) {
@@ -67,7 +68,7 @@ public class AudioPlayer {
         if(mAudioStatus == AudioStatus.RUNNING) {
             mAudioTrack.write(audioData, offsetInBytes, sizeInBytes);
         }else{
-            Log.e("AudioPlayer", "=== No data to AudioTrack !! mAudioStatus: " + mAudioStatus);
+            Log.e(TAG, "=== No data to AudioTrack !! mAudioStatus: " + mAudioStatus);
         }
         return true;
     }
