@@ -21,23 +21,22 @@ public class AudioImpl implements IAudioController {
 
     private InputStream in = null;
     private int byteread = 0;
-    private int samplingRateVal = 0;
     private int sizeInBytes = 0;
+    private static final String  TAG = "SefAudioRecord";
 
     public AudioImpl(int samplingRate, int channelConfig){
-        Log.e("beckLee", "beckLee 1111");
         if (mStatus == AudioStatus.STOPPED) {
             int val = 0;
-            samplingRateVal = samplingRate;
-
             if (1 == channelConfig)
                 val = AudioFormat.CHANNEL_IN_MONO;
-            else
+            else if(2 == channelConfig)
                 val = AudioFormat.CHANNEL_IN_STEREO;
+            else
+                Log.e(TAG, "channelConfig is error !");
 
             // Double the size for much safer
             sizeInBytes = AudioRecord.getMinBufferSize(samplingRate, val, AudioFormat.ENCODING_PCM_16BIT) * 2;
-            Log.e("beckLee", "beckLee sizeInBytes: " + sizeInBytes);
+            Log.e(TAG, "sizeInBytes: " + sizeInBytes);
 
             if (mAudioRecorder != null) {
                 mAudioRecorder.release();
@@ -50,7 +49,7 @@ public class AudioImpl implements IAudioController {
                     AudioFormat.ENCODING_PCM_16BIT,
                     sizeInBytes);
             if(mAudioRecorder == null)
-                Log.e("beckLee", "beckLee mAudioRecorder is null ");
+                Log.e(TAG, "mAudioRecorder is null ");
             mStatus = AudioStatus.INITIALISING;
         }
     }
@@ -114,9 +113,7 @@ public class AudioImpl implements IAudioController {
         while (mStatus == AudioStatus.RUNNING) {
             int read = mAudioRecorder.read(mAudioBuffer, 0, sizeInBytes);
             if (read != sizeInBytes){
-
-                Log.e("beckLee","beckLee :onAudioDataAvailable ==");
-//                continue;
+                Log.e(TAG,"== onAudioDataAvailable ==");
             }
             if (mAudioBuffer != null)
                 callback.onAudioDataAvailable(System.currentTimeMillis(), mAudioBuffer);
