@@ -1,17 +1,13 @@
 build/android-profile/
 app/.externalNativeBuild
 build/generated/
-app/src/main/libs
 build/intermediates
 .gradle/3.3/taskArtifacts
-app/src/main/libs/
 build/
 .gradle/3.3/tasks/
 .idea//
 .gradle/
-app/src/main/jniLibs
 */.DS_Store
-app/libs
 .idea/workspace.xml
 app/app.iml
 .idea/modules.xml
