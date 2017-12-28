@@ -47,7 +47,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
     private AudioPlayer mAudioPlayer = null;
     private AudioImpl mAI = null;
     private static final double sampleInterval  = 0.01; //  sampleInterval >= 0.01
-    private int channels = 1; // 1: Mono, 2: Stereo
+    private int channels = 2; // 1: Mono, 2: Stereo
     private int samplesPerCall = 0;
 
     File f ;
@@ -262,7 +262,10 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
 
     @Override
     public boolean onPlaybackFrame(final byte[] bytes, int i, int i1, int i2, final int i3) {
-//        Log.e(TAG , Arrays.toString(bytes));
+        //public abstract  boolean onPlaybackFrame(byte[] samples, int numOfSamples, int bytesPerSample, int channels, int samplesPerSec);
+        //Log.e(TAG, "numOfSamples: "+ i + " bytesPerSample :" + i1 + " channels: " + i2 + " samplesPerSec :" + i3 + " bytes.length： " + bytes.length);
+        // Log.e(TAG , Arrays.toString(bytes));ß
+
         if(mAudioPlayer!= null) {
             mAudioPlayer.play(bytes, 0, bytes.length);
         }
@@ -278,6 +281,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
     private void dispatchWork() {
         //The algorithms for samplesPerCall of setPlaybackAudioFrameParameters()
         samplesPerCall = (int)(samplingRate * channels * sampleInterval);
+        Log.e(TAG,"App numOfSamples: " + samplesPerCall);
         switch (mAE) {
             case App2App:
                 doApp2App();

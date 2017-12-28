@@ -26,11 +26,10 @@ public class AudioPlayer {
             else if(2 == channelConfig)
                 Val = AudioFormat.CHANNEL_OUT_STEREO;
             else
-                Log.e("Player",  "channelConfig is wrong !");
+                Log.e(TAG,  "channelConfig is wrong !");
 
             int mMinBufferSize = AudioTrack.getMinBufferSize(sampleRateInHz, Val, audioFormat);
-            Log.e(TAG, " sampleRateInHz :" + sampleRateInHz + " channelConfig :" + channelConfig + " audioFormat: " + audioFormat);
-            Log.e(TAG, " mMinBufferSize:  " + mMinBufferSize);
+            Log.e(TAG, " sampleRateInHz :" + sampleRateInHz + " channelConfig :" + channelConfig + " audioFormat: " + audioFormat + " mMinBufferSize: " + mMinBufferSize);
             if (mMinBufferSize == AudioTrack.ERROR_BAD_VALUE) {
                 Log.e(TAG,"AudioTrack.ERROR_BAD_VALUE : " + AudioTrack.ERROR_BAD_VALUE) ;
             }
@@ -64,7 +63,6 @@ public class AudioPlayer {
     }
 
     public boolean play(byte[] audioData, int offsetInBytes, int sizeInBytes) {
-
         if(mAudioStatus == AudioStatus.RUNNING) {
             mAudioTrack.write(audioData, offsetInBytes, sizeInBytes);
         }else{
