@@ -49,7 +49,8 @@ public class MainActivity extends AppCompatActivity {
 
         checkSelfPermission(new String[]{
                 Manifest.permission.RECORD_AUDIO,
-                Manifest.permission.WRITE_EXTERNAL_STORAGE
+                Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                Manifest.permission.CAMERA
         }, 200);
     }
 

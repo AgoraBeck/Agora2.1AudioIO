@@ -35,7 +35,6 @@ import io.agora.rtc.IRtcEngineEventHandler;
 import io.agora.rtc.RtcEngine;
 
 public class ChatRoomActivity extends AppCompatActivity implements IAudioCallback, IAudioFrameObserver {
-
     private final static String TAG = ChatRoomActivity.class.getSimpleName();
     private TextView mTvInfoDisplay;
 
@@ -57,7 +56,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
         @Override
         public void onJoinChannelSuccess(String channel, int uid, int elapsed) {
             super.onJoinChannelSuccess(channel, uid, elapsed);
-            sendMessage("JoinChannelSuccess:" + (uid & 0xFFFFFFFFL));
+            sendMessage("onJoinChannelSuccess:" + (uid & 0xFFFFFFFFL));
 
             if (mAE == AudioEnum.App2App || mAE == AudioEnum.App2SDK) {
                 mAI.start();
@@ -74,14 +73,14 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
             super.onError(err);
         }
 
-        @Override
-        public void onApiCallExecuted(String api, int error) {
-            super.onApiCallExecuted(api, error);
-            sendMessage("ApiCallExecuted:" + api);
-        }
+//        @Override
+//        public void onApiCallExecuted(String api, int error) {
+//            super.onApiCallExecuted(api, error);
+//            sendMessage("ApiCallExecuted:" + api);
+//        }
 
         @Override
-        public void onLeaveChannel(RtcStats stats) {
+        public void onLeaveChannel(IRtcEngineEventHandler.RtcStats stats) {
             Log.e(TAG,"onLeaveChannel");
             super.onLeaveChannel(stats);
         }
@@ -139,7 +138,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
         }
 
         @Override
-        public void onRtcStats(RtcStats stats) {
+        public void onRtcStats(IRtcEngineEventHandler.RtcStats stats) {
             super.onRtcStats(stats);
         }
     };
@@ -239,7 +238,7 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
         try {
             if(mRtcEngine == null){
                 Log.d(TAG,"== initAgoraEngine ==");
-                mRtcEngine = RtcEngine.create(ChatRoomActivity.this, getString(R.string.app_key), mEngineHandler);
+                mRtcEngine = RtcEngine.create(getBaseContext(), getString(R.string.app_key), mEngineHandler);
                 mRtcEngine.setChannelProfile(Constants.CHANNEL_PROFILE_LIVE_BROADCASTING);
                 mRtcEngine.setClientRole(Constants.CLIENT_ROLE_BROADCASTER);
                 mRtcEngine.setEnableSpeakerphone(false);
@@ -416,15 +415,13 @@ public class ChatRoomActivity extends AppCompatActivity implements IAudioCallbac
         mRtcEngine.setParameters("{\"rtc.log_filter\":65535}");
         mRtcEngine.setLogFile("/sdcard/open_live.log");
 
-        mRtcEngine.joinChannel(null, mStrChannelName.trim(), getResources().getString(R.string.app_key), 0);
+        int ret = mRtcEngine.joinChannel(null, mStrChannelName.trim(), getResources().getString(R.string.app_key), 0);
         if(null != mRtcEngine)
-            Log.d(TAG, "SDK Ver: " + mRtcEngine.getSdkVersion());
+            Log.e(TAG, "SDK Ver: " + mRtcEngine.getSdkVersion() + " ret : " + ret);
     }
 
     private void leaveChannel() {
         mRtcEngine.leaveChannel();
-        mAE = AudioEnum.SDK2SDK;
-        mAP  = AudioProfile.AUDIO_PROFILE_16000;
     }
 
     private void sendMessage(@NonNull final String s) {
